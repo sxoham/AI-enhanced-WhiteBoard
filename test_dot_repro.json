@@ -1,0 +1,682 @@
+{
+  "name": "%3",
+  "directed": true,
+  "strict": false,
+  "_draw_": 
+  [
+    {
+      "op": "c",
+      "grad": "none",
+      "color": "#fffffe00"
+    },
+    {
+      "op": "C",
+      "grad": "none",
+      "color": "#ffffff"
+    },
+    {
+      "op": "P",
+      "points": [[0.000,0.000],[0.000,546.350],[356.000,546.350],[356.000,0.000]]
+    }
+  ],
+  "bb": "0,0,356,546.35",
+  "label": "",
+  "nodesep": "0.5",
+  "rankdir": "TB",
+  "ranksep": "0.5",
+  "xdotversion": "1.7",
+  "_subgraph_cnt": 1,
+  "objects": [
+    {
+      "name": "cluster_0",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ecf0f1"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ecf0f1"
+        },
+        {
+          "op": "P",
+          "points": [[8.000,64.000],[8.000,460.750],[348.000,460.750],[348.000,64.000]]
+        }
+      ],
+      "bb": "8,64,348,460.75",
+      "color": "#ECF0F1",
+      "fontname": "Arial",
+      "fontsize": "14",
+      "label": "",
+      "nodesep": "0.5",
+      "rankdir": "TB",
+      "ranksep": "0.5",
+      "style": "filled",
+      "_gvid": 0,
+      "nodes": [
+        2,3,4,5
+      ],
+      "edges": [
+        1,2,3
+      ]
+    },
+    {
+      "_gvid": 1,
+      "name": "Start",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#2ecc71"
+        },
+        {
+          "op": "E",
+          "rect": [178.000,517.550,28.800,28.800]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,512.500],
+          "align": "c",
+          "width": 29.250,
+          "text": "Start"
+        }
+      ],
+      "fillcolor": "#2ECC71",
+      "fixedsize": "true",
+      "fontcolor": "white",
+      "fontname": "Arial",
+      "height": "0.8",
+      "label": "Start",
+      "pos": "178,517.55",
+      "shape": "circle",
+      "style": "filled",
+      "width": "0.8"
+    },
+    {
+      "_gvid": 2,
+      "name": "Types of Rocks in India_0_header",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#3498db"
+        },
+        {
+          "op": "P",
+          "points": [[254.250,452.750],[101.750,452.750],[101.750,416.750],[254.250,416.750]]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,429.320],
+          "align": "c",
+          "width": 136.500,
+          "text": "Types of Rocks in India"
+        }
+      ],
+      "fillcolor": "#3498DB",
+      "fontcolor": "white",
+      "height": "0.5",
+      "label": "Types of Rocks in India",
+      "pos": "178,434.75",
+      "shape": "box",
+      "style": "filled",
+      "width": "2.1181"
+    },
+    {
+      "_gvid": 3,
+      "name": "Types of Rocks in India_0_step_0",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [[250.500,380.750],[105.500,380.750],[105.500,309.750],[250.500,309.750]]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,363.450],
+          "align": "c",
+          "width": 129.000,
+          "text": "Rocks of the Archaean"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,347.700],
+          "align": "c",
+          "width": 39.000,
+          "text": "system"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,331.950],
+          "align": "c",
+          "width": 110.250,
+          "text": "workshentary rocks"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,316.200],
+          "align": "c",
+          "width": 54.000,
+          "text": "Rajasthan"
+        }
+      ],
+      "fillcolor": "white",
+      "height": "0.98611",
+      "label": "Rocks of the Archaean\nsystem\nworkshentary rocks\nRajasthan",
+      "pos": "178,345.25",
+      "shape": "box",
+      "style": "filled",
+      "width": "2.0139"
+    },
+    {
+      "_gvid": 4,
+      "name": "Types of Rocks in India_0_step_1",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffffff"
+        },
+        {
+          "op": "P",
+          "points": [[253.120,273.750],[102.880,273.750],[102.880,218.500],[253.120,218.500]]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,256.450],
+          "align": "c",
+          "width": 132.000,
+          "text": "Pods with a coiled shell"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,240.700],
+          "align": "c",
+          "width": 134.250,
+          "text": "formed from hot molten"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,224.950],
+          "align": "c",
+          "width": 27.000,
+          "text": "earth"
+        }
+      ],
+      "fillcolor": "white",
+      "height": "0.76736",
+      "label": "Pods with a coiled shell\nformed from hot molten\nearth",
+      "pos": "178,246.13",
+      "shape": "box",
+      "style": "filled",
+      "width": "2.0868"
+    },
+    {
+      "_gvid": 5,
+      "name": "Types of Rocks in India_0_step_2",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#f1c40f"
+        },
+        {
+          "op": "P",
+          "points": [[178.000,182.500],[15.750,127.250],[178.000,72.000],[340.250,127.250]]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,137.570],
+          "align": "c",
+          "width": 146.250,
+          "text": "Is the dog breed a Golden"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,121.830],
+          "align": "c",
+          "width": 105.750,
+          "text": "Retriever?rillas and"
+        },
+        {
+          "op": "F",
+          "size": 14.000,
+          "face": "Times-Roman"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,106.080],
+          "align": "c",
+          "width": 71.250,
+          "text": "chimpanzees"
+        }
+      ],
+      "fillcolor": "#F1C40F",
+      "height": "1.5347",
+      "label": "Is the dog breed a Golden\nRetriever?rillas and\nchimpanzees",
+      "pos": "178,127.25",
+      "shape": "diamond",
+      "style": "filled",
+      "width": "4.5069"
+    },
+    {
+      "_gvid": 6,
+      "name": "End",
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#ffb6c1"
+        },
+        {
+          "op": "E",
+          "rect": [178.000,18.000,27.000,18.000]
+        }
+      ],
+      "_ldraw_": 
+      [
+        {
+          "op": "F",
+          "size": 12.000,
+          "face": "Arial"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "T",
+          "pt": [178.000,13.350],
+          "align": "c",
+          "width": 21.000,
+          "text": "End"
+        }
+      ],
+      "fillcolor": "lightpink",
+      "fontname": "Arial",
+      "fontsize": "12",
+      "height": "0.5",
+      "label": "End",
+      "pos": "178,18",
+      "shape": "oval",
+      "style": "filled",
+      "width": "0.75"
+    }
+  ],
+  "edges": [
+    {
+      "_gvid": 0,
+      "tail": 1,
+      "head": 2,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [[178.000,488.290],[178.000,480.530],[178.000,472.100],[178.000,464.320]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [[181.500,464.320],[178.000,454.320],[174.500,464.320]]
+        }
+      ],
+      "label": "",
+      "pos": "e,178,452.81 178,488.29 178,480.53 178,472.1 178,464.32"
+    },
+    {
+      "_gvid": 1,
+      "tail": 2,
+      "head": 3,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [[178.000,416.460],[178.000,409.550],[178.000,401.220],[178.000,392.750]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [[181.500,392.750],[178.000,382.750],[174.500,392.750]]
+        }
+      ],
+      "label": "",
+      "pos": "e,178,381.24 178,416.46 178,409.55 178,401.22 178,392.75"
+    },
+    {
+      "_gvid": 2,
+      "tail": 3,
+      "head": 4,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [[178.000,309.460],[178.000,301.630],[178.000,293.290],[178.000,285.330]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [[181.500,285.570],[178.000,275.570],[174.500,285.570]]
+        }
+      ],
+      "label": "",
+      "pos": "e,178,274.06 178,309.46 178,301.63 178,293.29 178,285.33"
+    },
+    {
+      "_gvid": 3,
+      "tail": 4,
+      "head": 5,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [[178.000,218.020],[178.000,210.790],[178.000,202.640],[178.000,194.290]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [[181.500,194.350],[178.000,184.350],[174.500,194.350]]
+        }
+      ],
+      "label": "",
+      "pos": "e,178,182.84 178,218.02 178,210.79 178,202.64 178,194.29"
+    },
+    {
+      "_gvid": 4,
+      "tail": 5,
+      "head": 6,
+      "_draw_": 
+      [
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "b",
+          "points": [[178.000,71.680],[178.000,63.360],[178.000,55.070],[178.000,47.610]]
+        }
+      ],
+      "_hdraw_": 
+      [
+        {
+          "op": "S",
+          "style": "solid"
+        },
+        {
+          "op": "c",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "C",
+          "grad": "none",
+          "color": "#000000"
+        },
+        {
+          "op": "P",
+          "points": [[181.500,47.850],[178.000,37.850],[174.500,47.850]]
+        }
+      ],
+      "label": "",
+      "pos": "e,178,36.34 178,71.682 178,63.361 178,55.069 178,47.61"
+    }
+  ]
+}

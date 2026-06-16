@@ -1,0 +1,2033 @@
+Total pages: 90
+
+--- Page 1 ---
+AI ENHANCED WHITEBOARD
+Submitte d in p artial full lment of the r e quir ements
+for the de gr e e of
+Bachelor of Engine ering
+by
+Deshm ukh T ushar Sunil (11)
+Jadha v Samarth Sunil (21)
+Mhatre Soham Narendra (30)
+Shaikh F aizabi Zub erali (39)
+Guide
+Prof. P .R. Bhosale
+DEP AR TMENT OF AR TIFICIAL INTELLIGENCE
+& D A T A SCIENCE
+K ONKAN GY ANPEETH COLLEGE OF
+ENGINEERING KARJA T-410201
+2025-26
+--- Page 2 ---
+Certicate
+This is to certify that the pro ject en titled "AI ENHANCED WHITEBO ARD"
+is a b onade w ork of
+1. Deshm ukh T ushar Sunil Roll No.11
+2. Jadha v Samarth Sunil Roll No.21
+3. Mhatre Soham Narendra Roll No.30
+4. Shaikh F aizabi Zub erali Roll No.39
+submitted to the Univ ersit y of Mum bai in partial fulllmen t of the requiremen t for
+the a w ard of the degree of Bac helor of Engineering in Departmen t of Articial
+In telligence & Data Science during academic y ear 2025-26.
+Guide
+Prof. P .R. Bhosale
+Departmen t of AI & DS
+Head of Departmen t
+Prof. G. V. Dakha v e
+Departmen t of AI & DSPrincipal
+Dr. Vilas Janardan Pillew an
+K.G.C.E., Karjat
+i
+--- Page 3 ---
+Pro ject Report Approv al
+This rep ort en titled "AI ENHANCED WHITEBO ARD" submitted b y
+1. Deshm ukh T ushar Sunil Roll No.11
+2. Jadha v Samarth Sunil Roll No.21
+3. Mhatre Soham Narendra Roll No.30
+4. Shaikh F aizabi Zub erali Roll No.39
+is appro v ed for the degree of Bac helor of Engineering in Articial In telligence &
+Data Science during academic y ear 2025-26
+Examiners
+1..........................................
+2..........................................
+Date:
+Place:
+ii
+--- Page 4 ---
+Declaration
+W e declare that this written submission represen ts m y ideas in m y o wn w ords and
+where others' ideas or w ords ha v e b een included, W e ha v e adequately cited and
+referenced the original sources. W e also declare that w e ha v e adhered to all prin-
+ciples of academic honest y and in tegrit y and ha v e not misrepresen ted or fabricated
+or falsied an y idea/data/fact/source in our submission. W e understand that an y
+violation of the ab o v e will b e cause for disciplinary action b y the Institute and can
+also ev ok e p enal action from the sources whic h ha v e th us not b een prop erly cited or
+from whom prop er p ermission has not b een tak en when needed.
+Signature
+Deshm ukh T ushar Sunil (11)
+Signature
+Jadha v Samarth Sunil (21)
+Signature
+Mhatre Soham Narendra (30)
+Signature
+Shaikh F aizabi Zub erali (39)
+Date: 25/04/2026
+Place: Karjat
+iii
+--- Page 5 ---
+Abstract
+A digital whiteb oard is a platform that p ermits an y one in an idea creation session to
+tak e con trol of a b oard and con tribute to its con ten t. Whether used for brainstorming
+sessions, design planning, tutoring, or presen ting, an online whiteb oard pro vides a
+dynamic and exible space for driving eectiv e collab oration. T ec hnology is used to
+automate our tasks. Articial In telligence ecien tly helps in automating tasks across
+v arious industries and domains. Due to its eciency to automate tasks and create
+mac hines capable of p erforming op erations that t ypically require h uman in telligence,
+it is one of the leading domains in the IT industry .
+This pro ject com bines the traditional whiteb oard exp erience with cutting-edge ar-
+ticial in telligence capabilities. It enhances the existing features of a digital white-
+b oard b y in tegrating robust generativ e AI mo dels. The system pro vides adv anced
+to ols suc h as summarizing long-form Y ouT ub e videos, automatically generating pro-
+fessional o w c harts from natural language descriptions or video links, and oering
+in telligen t idea generation for brainstorming. F urthermore, it impro v es user exp eri-
+ence b y incorp orating auto-shap e detection to rene hand-dra wn sk etc hes, Optical
+Character Recognition (OCR) to extract text directly from images and PDF s, and a
+v oice assistan t for seamless, hands-free con trol. T o accomplish this, the AI-Enhanced
+Whiteb oard lev erages dieren t subelds of AI, including Mac hine Learning, Natural
+Language Pro cessing, Computer Vision, and Sp eec h Recognition.
+Keyw ords: Digital Whiteb oard, Articial In telligence, Mac hine learning, Natural
+Language Pro cessing, Sp eec h Recognition, OCR, Generativ e AI.
+--- Page 6 ---
+Contents
+Certicate i
+Pro ject Rep ort Appro v al ii
+Declaration iii
+Abstract iv
+Con ten ts v
+List of Figures viii
+List of T ables ix
+Abbreviations x
+1 INTR ODUCTION 1
+1.1 In tro duction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2 Ob jectiv es . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.3 Purp ose, Scop e, and Applicabilit y . . . . . . . . . . . . . . . . . . . . 3
+1.3.1 Purp ose . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.3.2 Scop e . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.3.3 Applicabilit y . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+1.4 A c hiev emen ts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+1.5 Organisation of Rep ort . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+2 LITERA TURE SUR VEY 8
+2.1 The OnHW Dataset: Online Handwriting Recognition F rom IMU-
+Enhanced Ballp oin t P ens With Mac hine Learning (2020) . . . . . . . 8
+2.2 Articial In telligence Based Language T ranslation Platform (2021) . . 9
+2.3 Biometric V oice Recognition In Securit y System (2014) . . . . . . . . 9
+2.4 Automated Whiteb oard Lecture Video Summarization By Con ten t
+Region Detection And Represen tation (2021) . . . . . . . . . . . . . . 10
+2.5 Articial In telligen t Based Video Analysis On The T eac hing In terac-
+tion P atterns In Classro om En vironmen t (2021) . . . . . . . . . . . . 11
+2.6 Implemen tation Of AI P op Bots And Its Allied Applications F or De-
+signing Ecien t Curriculum In Early Childho o d Education(2022) . . 11
+v
+--- Page 7 ---
+2.7 Co-Designing A Real-Time Classro om Orc hestration T o ol T o Supp ort
+T eac her-Ai Complemen tarit y (2019) . . . . . . . . . . . . . . . . . . . 12
+3 REQUIREMENTS AND ANAL YSIS 13
+3.1 Problem Denition . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+3.2 Requiremen ts Sp ecication . . . . . . . . . . . . . . . . . . . . . . . . 14
+3.2.1 F unctional Requiremen ts . . . . . . . . . . . . . . . . . . . . . 15
+3.2.2 Non-F unctional Requiremen ts . . . . . . . . . . . . . . . . . . 15
+3.3 Planning and Sc heduling . . . . . . . . . . . . . . . . . . . . . . . . . 16
+3.4 Soft w are and Hardw are Requiremen ts . . . . . . . . . . . . . . . . . . 18
+3.4.1 Hardw are Requiremen ts . . . . . . . . . . . . . . . . . . . . . 18
+3.4.2 Soft w are Requiremen ts . . . . . . . . . . . . . . . . . . . . . . 19
+3.5 Preliminary Pro duct Description . . . . . . . . . . . . . . . . . . . . 19
+3.6 Conceptual Mo dels . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+4 SYSTEM DESIGN 23
+4.1 Basic Mo dules . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+4.2 Data Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+4.2.1 Sc hema Design . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+4.2.2 Data In tegrit y and Constrain ts . . . . . . . . . . . . . . . . . 26
+4.3 Pro cedural Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+4.3.1 Logic Diagrams . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+4.3.2 Data Structures . . . . . . . . . . . . . . . . . . . . . . . . . . 27
+4.3.3 Algorithms Design . . . . . . . . . . . . . . . . . . . . . . . . 28
+4.4 User in terface design . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+4.5 Securit y Issues and Real-Time Considerations . . . . . . . . . . . . . 30
+4.5.1 Real-Time Considerations . . . . . . . . . . . . . . . . . . . . 30
+4.5.2 Securit y Issues and Mitigation Arc hitecture . . . . . . . . . . 31
+4.6 T est Cases Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+5 IMPLEMENT A TION AND TESTING 35
+5.1 Implemen tation Approac hes . . . . . . . . . . . . . . . . . . . . . . . 35
+5.1.1 Key Implemen tation Strategies and Standards . . . . . . . . . 35
+5.2 Co ding Details and Co de Eciency . . . . . . . . . . . . . . . . . . . 37
+5.2.1 Co ding Details . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+5.2.2 Co de Eciency . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+5.3 T esting Approac h . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+5.3.1 Unit T esting . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+5.3.2 In tegrated T esting . . . . . . . . . . . . . . . . . . . . . . . . 46
+5.4 Mo dications and Impro v emen ts . . . . . . . . . . . . . . . . . . . . . 46
+6 RESUL TS AND DISCUSSION 49
+vi
+--- Page 8 ---
+6.1 T esting Approac h . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+6.2 User Do cumen tation . . . . . . . . . . . . . . . . . . . . . . . . . . . 64
+6.2.1 Getting Started . . . . . . . . . . . . . . . . . . . . . . . . . . 65
+6.2.2 Core Whiteb oard Op erations . . . . . . . . . . . . . . . . . . 65
+6.2.3 AI-P o w ered F eatures . . . . . . . . . . . . . . . . . . . . . . . 66
+6.2.3.1 OCR and T ext Extraction . . . . . . . . . . . . . . . 66
+6.2.3.2 V oice Assistan t In tegration . . . . . . . . . . . . . . 66
+6.2.3.3 Y ouT ub e Video Summarization . . . . . . . . . . . . 67
+6.2.3.4 AI Magic Flo w c hart . . . . . . . . . . . . . . . . . . 68
+6.2.4 In telligen t In teractions . . . . . . . . . . . . . . . . . . . . . . 68
+7 Conclusion 70
+A Supplemen tary Details 72
+A.1 In tro duction . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 72
+A.2 Mathematical Represen tation of Key Mo dules . . . . . . . . . . . . . 73
+A.2.1 OCR Pro cessing Mo del . . . . . . . . . . . . . . . . . . . . . . 73
+A.2.2 Recursiv e Summarization Algorithm . . . . . . . . . . . . . . 73
+A.2.3 Flo w c hart Generation Logic . . . . . . . . . . . . . . . . . . . 74
+A.3 Sample Co de Snipp ets . . . . . . . . . . . . . . . . . . . . . . . . . . 74
+A.3.1 OCR Microservice (Flask) . . . . . . . . . . . . . . . . . . . . 74
+A.3.2 Flo w c hart P arsing Logic . . . . . . . . . . . . . . . . . . . . . 75
+A.4 User Do cumen tation . . . . . . . . . . . . . . . . . . . . . . . . . . . 75
+A.4.1 System Requiremen ts . . . . . . . . . . . . . . . . . . . . . . . 75
+A.4.2 Steps to Run the Application . . . . . . . . . . . . . . . . . . 76
+A.4.3 F eatures Usage . . . . . . . . . . . . . . . . . . . . . . . . . . 76
+A.5 A dditional T est Case Results . . . . . . . . . . . . . . . . . . . . . . . 77
+A.6 Limitations and F uture Scop e . . . . . . . . . . . . . . . . . . . . . . 77
+A.6.1 Limitations . . . . . . . . . . . . . . . . . . . . . . . . . . . . 77
+A.6.2 F uture Enhancemen ts . . . . . . . . . . . . . . . . . . . . . . 77
+Bibliograph y 78
+vii
+--- Page 9 ---
+List of Figures
+3.1 Pro ject Planning Gan tt Chart . . . . . . . . . . . . . . . . . . . . . . 17
+3.2 Pro ject Planning PER T Chart . . . . . . . . . . . . . . . . . . . . . . 18
+3.3 AI-Enhanced Whiteb oard Conceptual Arc hitecture Diagram . . . . . 22
+4.1 AI-Enhanced Whiteb oard Logic Diagram . . . . . . . . . . . . . . . . 27
+4.2 AI-Enhanced Whiteb oard UI Design . . . . . . . . . . . . . . . . . . 29
+6.1 TC01: Whiteb oard Displa y Result . . . . . . . . . . . . . . . . . . . . 50
+6.2 TC02: Dra wing F unctionalit y Result . . . . . . . . . . . . . . . . . . 50
+6.3 TC03: Eraser F unctionalit y Result . . . . . . . . . . . . . . . . . . . 51
+6.4 TC04: Undo/Redo F unctionalit y Result . . . . . . . . . . . . . . . . 52
+6.5 TC05: Sa v e F unctionalit y Results . . . . . . . . . . . . . . . . . . . . 52
+6.6 TC06: Op en Sa v ed Whiteb oard Results . . . . . . . . . . . . . . . . . 53
+6.7 TC07: Clear Whiteb oard Result . . . . . . . . . . . . . . . . . . . . . 54
+6.8 TC08: Image Upload Results . . . . . . . . . . . . . . . . . . . . . . 55
+6.9 TC09: Image F ormat T ext Extraction Results . . . . . . . . . . . . . 55
+6.10 TC10: Clear Prin ted T ext Extraction Result . . . . . . . . . . . . . . 56
+6.11 TC11: Handwritten T ext Extraction Result . . . . . . . . . . . . . . 57
+6.12 TC12: No T ext Image Extraction Result . . . . . . . . . . . . . . . . 57
+6.13 TC13: Cursiv e T ext Image Extraction Result . . . . . . . . . . . . . 58
+6.14 TC14: V oice Assistan t A ctiv ation Result . . . . . . . . . . . . . . . . 59
+6.15 TC15: V oice Command T ext Input Result . . . . . . . . . . . . . . . 59
+6.16 TC16: V oice Command Shap e Dra wing Results . . . . . . . . . . . . 60
+6.17 TC17: Y ouT ub e Summarization Results . . . . . . . . . . . . . . . . 61
+6.18 TC18: AI Flo w c hart Generation Result . . . . . . . . . . . . . . . . . 62
+6.19 TC19: Smart Connectors Logic Results . . . . . . . . . . . . . . . . . 63
+6.20 TC20: AI Idea Suggestion Result . . . . . . . . . . . . . . . . . . . . 64
+6.21 Main Whiteb oard In terface . . . . . . . . . . . . . . . . . . . . . . . . 65
+6.22 T ext Extraction from Image Result . . . . . . . . . . . . . . . . . . . 66
+6.23 V oice Assistan t In teraction . . . . . . . . . . . . . . . . . . . . . . . . 67
+6.24 Y ouT ub e Video Summary Visual Map . . . . . . . . . . . . . . . . . 68
+6.25 Generated Magic Flo w c hart . . . . . . . . . . . . . . . . . . . . . . . 68
+viii
+--- Page 10 ---
+List of T ables
+4.1 F unctional and In tegration T est Cases . . . . . . . . . . . . . . . . . 34
+6.1 T est Case: Whiteb oard Displa y V erication . . . . . . . . . . . . . . 49
+6.2 T est Case: Dra wing F unctionalit y V erication . . . . . . . . . . . . . 50
+6.3 T est Case: Eraser F unctionalit y V erication . . . . . . . . . . . . . . 51
+6.4 T est Case: Undo/Redo F unctionalit y V erication . . . . . . . . . . . 51
+6.5 T est Case: Sa v e F unctionalit y V erication . . . . . . . . . . . . . . . 52
+6.6 T est Case: Op en Sa v ed Whiteb oard V erication . . . . . . . . . . . . 53
+6.7 T est Case: Clear Whiteb oard F unctionalit y V erication . . . . . . . . 54
+6.8 T est Case: Image Upload F unctionalit y V erication . . . . . . . . . . 54
+6.9 T est Case: Image F ormat T ext Extraction V erication . . . . . . . . . 55
+6.10 T est Case: Clear Prin ted T ext Extraction V erication . . . . . . . . . 56
+6.11 T est Case: Handwritten T ext Extraction V erication . . . . . . . . . 56
+6.12 T est Case: No T ext Image Extraction V erication . . . . . . . . . . . 57
+6.13 T est Case: Cursiv e T ext Image Extraction V erication . . . . . . . . 58
+6.14 T est Case: V oice Assistan t A ctiv ation V erication . . . . . . . . . . . 58
+6.15 T est Case: V oice Command T ext Input V erication . . . . . . . . . . 59
+6.16 T est Case: V oice Command Shap e Dra wing . . . . . . . . . . . . . . 60
+6.17 T est Case: Y ouT ub e Summarization V erication . . . . . . . . . . . . 61
+6.18 T est Case: AI Flo w c hart Generation V erication . . . . . . . . . . . . 62
+6.19 T est Case: Smart Connectors Logic V erication . . . . . . . . . . . . 63
+6.20 T est Case: AI Idea Suggestion V erication . . . . . . . . . . . . . . . 64
+A.1 Supplemen tary T est Case Results . . . . . . . . . . . . . . . . . . . . 77
+ix
+--- Page 11 ---
+Abbreviations
+AI A rticial I n telligence
+API A pplication P rogramming I n terface
+GUI G raphical U ser I n terface
+JSON J a v a S cript O b ject N otation
+LLM L arge L anguage M o del
+NLP N atural L anguage P ro cessing
+OCR O ptical C haracter R ecognition
+UUID U niv ersally U nique I den tier
+x
+--- Page 12 ---
+Chapter 1
+INTRODUCTION
+1.1 In tro duction
+A whiteb oard is widely used in educational and professional settings. A traditional
+whiteb oard is used in the educational sector to teac h, explain lessons, and engage
+studen ts in in teractiv e learning. Professionally , it is used for discussing strategies,
+explaining pro ject plans, brainstorming new ideas, sk etc hing, designing, and m uc h
+more. In recen t y ears, tec hnological adv ancemen ts ha v e transformed traditional
+classro om settings and collab orativ e w ork en vironmen ts. Man y computerized appli-
+cations ha v e b een dev elop ed, commonly kno wn as Digital Whiteb oards. A digital
+whiteb oard pro vides v arious features lik e dra wing, diagramming, annotating, screen
+sharing, and compatibilit y with dieren t devices suc h as tablets and in teractiv e dis-
+pla ys.
+The in tegration of Articial In telligence (AI) in digital whiteb oards extends its ca-
+pabilities b ey ond simple digitization, enabling features suc h as con ten t recognition,
+natural language pro cessing, and adaptiv e in telligence. In the past few y ears, AI in
+digital whiteb oards has often b een limited to basic auto-alignmen t or smart searc h
+1
+--- Page 13 ---
+Chapter 1. INTR ODUCTION
+op erations. Ho w ev er, mo dern AI algorithms, particularly Generativ e AI mo dels, can
+b e lev eraged to build a v astly more adv anced digital whiteb oard.
+This system mak es use of dieren t AI algorithms and microservices to pro vide
+highly adv anced features in a single unied platform. Key implemen tations include
+Y ouT ub e and long-form video con ten t summarization, in telligen t ideation and smart
+suggestions, Magic Flo w c hart generation from natural language, Optical Character
+Recognition (OCR) for extracting text directly from images, auto-shap e detection
+for sk etc hes, and a v oice assistan t for seamless hands-free con trol.
+The purp ose of the AI-Enhanced Whiteb oard is to rev olutionize traditional collab-
+oration and ideation pro cesses b y in tegrating these adv anced tec hnologies. This
+solution aims to signican tly enhance pro ductivit y in v arious settings, suc h as class-
+ro oms, b oardro oms, and creativ e w orkspaces. The pro ject bridges the gap b et w een
+traditional whiteb oards and mo dern tec hnological adv ancemen ts, upgrading regular
+digital whiteb oards to a whole new lev el and pro viding a comprehensiv e solution
+that fullls the demanding needs of mo dern, collab orativ e w ork en vironmen ts.
+1.2 Ob jectiv es
+The primary goal of the pro ject is to pro vide adv anced AI features within a dig-
+ital whiteb oard en vironmen t. The pro ject in tegrates user-friendly functions suc h
+as a v oice assistan t, whic h enhances the o v erall user exp erience b y reducing man-
+ual eorts. The sp ecic ob jectiv es of the pro ject include implemen ting in telligen t
+con ten t recognition to enable the system to in terpret and pro cess text and images
+via optical c haracter recognition (OCR) and auto-shap e capabilities. F urthermore,
+the pro ject implemen ts features for summarizing long-form information (suc h as
+Y ouT ub e videos) and automatically generating professional o w c harts from natural
+language, sa ving time and making complex data easier to understand. The pro ject
+also in tro duces a Generativ e AI-p o w ered idea generation mo dule that assists users
+2
+--- Page 14 ---
+Chapter 1. INTR ODUCTION
+during brainstorming sessions b y proactiv ely suggesting new concepts. Ultimately ,
+the ob jectiv e is to pro vide a v ersatile and in telligen t platform that rev olutionizes
+collab orativ e w ork and b o osts user pro ductivit y .
+1.3 Purp ose, Scop e, and Applicabilit y
+This section establishes the need for undertaking the AI-Enhanced Whiteb oard
+pro ject b y dening its purp ose, the scop e of its features, and its real-w orld ap-
+plicabilit y in professional and educational domains.
+1.3.1 Purp ose
+The purp ose of the AI-Enhanced Whiteb oard pro ject is to transform the traditional
+digital can v as in to an activ e, in telligen t participan t in the ideation pro cess. T ypical
+whiteb oard applications only serv e as passiv e digitization to ols, lea ving the cogni-
+tiv e hea vy-lifting lik e summarizing extensiv e data, extracting text, or structuring
+unstructured ideas en tirely to the user. This pro ject incorp orates Generativ e AI
+to automate these tasks, sa ving time and impro ving fo cus. Its signicance lies in
+creating a seamless bridge b et w een a visual w orkspace (dra wing, annotating) and an
+analytical w orkspace (NLP-driv en idea generation, video summarization, and OCR
+text extraction).
+1.3.2 Scop e
+The scop e of this pro ject encompasses the dev elopmen t of a comprehensiv e desktop
+application featuring a m ulti-la y ered in teractiv e can v as. The primary functional
+mo dules include:
+3
+--- Page 15 ---
+Chapter 1. INTR ODUCTION
+ Generativ e AI In tegration : Incorp orating Go ogle Gemini and Gro q mo dels
+for instan t idea generation and brainstorming.
+ Automated Summarization and Diagramming : Pro cessing long-form
+Y ouT ub e videos, extracting seman tic summaries, and rendering concepts in to
+Graph viz o w c harts.
+ Computer Vision : Utilizing a Flask-based T esseract OCR microserv er to
+pull actionable text directly from imp orted images and PDF s.
+ V oice A ccessibilit y : In tegrating a v oice assistan t for hands-free na vigation
+and to ol selection.
+The pro ject assumes the user has access to a reliable in ternet connection for the
+LLM API calls and a lo cal installation of the T esseract and Graph viz dep endencies.
+1.3.3 Applicabilit y
+The AI-Enhanced Whiteb oard has direct applications in b oth educational and corp o-
+rate en vironmen ts. In classro oms, educators can automatically generate structured
+o w c harts from lesson planning, while studen ts can use the summarizer to distill
+complex lecture videos in to concise visual notes. In corp orate settings, teams can
+lev erage the in telligen t idea generation mo dule during brainstorming sessions to ex-
+plore new strategies dynamically , and use the OCR to ol to extract ra w data from
+presen tation slides seamlessly . Ultimately , the pro ject serv es as a comp elling mo del
+for ho w AI to oling can drastically enhance h uman pro ductivit y in collab orativ e tasks.
+4
+--- Page 16 ---
+Chapter 1. INTR ODUCTION
+1.4 A c hiev emen ts
+The completion of the AI-Enhanced Whiteb oard pro ject has resulted in sev eral sig-
+nican t tec hnical ac hiev emen ts and extensiv e kno wledge acquisition. Key ac hiev e-
+men ts include:
+ System In tegration : In tegrated m ultiple APIs (Gemini, Gro q) and lo cal
+microservices (Flask-OCR) in to a unied Tkin ter fron tend.
+ Complex Diagram Automation : Implemen ted a robust parser mec hanism
+that successfully translates arbitrary natural language queries in to structured
+syn tax, subsequen tly rendering in teractiv e diagrams via Graph viz.
+ Long-F orm Data Pro cessing : A c hiev ed the abilit y to b ypass LLM con-
+text limit restrictions b y engineering a recursiv e extraction-and-summarization
+pip eline, capable of digesting Y ouT ub e video transcripts exceeding three hours
+in length.
+ Computer Vision and Sp eec h : Successfully deplo y ed T esseract OCR inside
+the application to con v ert imp orted images in to editable text, and in tegrated
+a reliable v oice assistan t for to ol accessibilit y .
+Con tributions to the Chosen Area : This pro ject con tributes a practical, w ork-
+ing protot yp e demonstrating ho w traditional digital whiteb oards can ev olv e from
+static rendering surfaces to activ e cognitiv e collab orators. By seamlessly bridging
+visual w orkspaces with Generativ e AI, the pro ject signican tly reduces the man ual
+o v erhead required for diagramming, idea structuring, and data ingestion.
+Goal A ttainmen t : The am bitious original ob jectiv es laid out for the pro ject w ere
+fully ac hiev ed and, in some areas in v olving long-form video pro cessing, exceeded.
+5
+--- Page 17 ---
+Chapter 1. INTR ODUCTION
+The seamless in tegration of in telligen t ideation alongside accessibilit y features cre-
+ated an application mo del that strongly supp orts the original h yp othesisthat merg-
+ing Generativ e AI nativ ely in to a digital can v as results in a fundamen tally more
+pro ductiv e collab orativ e exp erience.
+1.5 Organisation of Rep ort
+The remainder of this rep ort is organized in to sev en subsequen t c hapters that thor-
+oughly do cumen t the dev elopmen t cycle of the AI-Enhanced Whiteb oard.
+Chapter 2: Literature Surv ey reviews the existing researc h and commercially
+a v ailable solutions related to digital whiteb oards and in tegrating AI to ols, serving
+to establish the baseline of curren t tec hnologies and iden tify functional gaps.
+Chapter 3: Requiremen ts and Analysis outlines the soft w are and hardw are
+prerequisites for the pro ject, detailing the functional requiremen ts for k ey mo dules
+lik e the OCR microserv er, Generativ e AI APIs, and the in teractiv e Tkin ter-based
+can v as.
+Chapter 4: System Design presen ts the o v erall arc hitectural framew ork of the
+application. It includes structural diagrams, data o w mo dels, and the parsing ar-
+c hitecture whic h illustrates ho w the v arious data pip elines (suc h as video transcripts
+and v oice inputs) in teract with the fron tend in terface.
+Chapter 5: Implemen tation and T esting delv es in to the concrete realization
+of the design. This c hapter discusses the core algorithms deplo y ed for complex
+tasks, lik e the recursiv e Y ouT ub e summarization c h unking, alongside the testing
+metho dologies used to ensure robustness and accuracy across all to ols.
+Chapter 6: Results and Discussion sho w cases the nal w orking protot yp e, an-
+alyzing its p erformance against the initial ob jectiv es, discussing system limitations,
+and pro viding visual evidence of the successful in tegration of AI features.
+6
+--- Page 18 ---
+Chapter 1. INTR ODUCTION
+Chapter 7: F uture Enhancemen ts outlines the p oten tial directions for further
+dev elopmen t, including m ultilingual supp ort, real-time collab oration, and mobile
+platform in tegration.
+Chapter 8: Conclusion formally concludes the rep ort b y summarizing the pro ject's
+impact, the eectiv eness of the in tegrated AI tec hnologies, and the p oten tial of the
+system to augmen t h uman pro ductivit y in mo dern w orkplaces.
+7
+--- Page 19 ---
+Chapter 2
+LITERA TURE SUR VEY
+2.1 The OnHW Dataset: Online Handwriting Recog-
+nition F rom IMU-Enhanced Ballp oin t P ens With
+Mac hine Learning (2020)
+In this pap er, researc hers addressed the handwriting recognition task and the a v ail-
+able public datasets that are p opular in the scien tic comm unit y . They summarized
+a v ailable oine and online handwriting datasets, and made an in-depth compari-
+son to our no v el OnHW dataset that includes data for writing alphab et c haracters
+on regular pap er. The dataset w as collected using the ST ABILO Digi p en. The
+dataset pro vides a time-series represen tation of sensor signals that recorded the p en
+mo v emen t during writing, whic h include linear accelerations, angular v elo cities and
+magnetic eld recordings that help in iden tifying the angle at whic h the p en w as
+held, along with the force applied b y the p en on the pap er to iden tify when writ-
+ing and ho v ering o ccurs. In addition, they implemen ted a series of exp erimen ts for
+the online c haracter classication task, applied o v er dieren t subsets of the dataset,
+based on m ultiple ML and DL algorithms, whic h are widely used in the time-series
+classication domain.
+8
+--- Page 20 ---
+Chapter 2. LITERA TURE SUR VEY
+2.2 Articial In telligence Based Language T ransla-
+tion Platform (2021)
+The prop osed system b y authors uses a pre-trained mo del from Go ogle T ranslation
+API; hence, it can supp ort man y languages, including English and Arabic. The
+prop osed framew ork w as constructed with the aid of AutoML, whic h is a Go ogle
+translation mo dule. The (English Language T ranslation F ramew ork) ETF system
+aords four adv an tages. First, auto-detection language is supp orted: when a user
+do es not kno w the source language, the ETF automatically iden ties it. Second,
+the ETF has glossary supp ort: the glossary of Go ogle T ranslation API allo ws the
+storage of translated w ords and sen tences. Third, batc h-wise translation is p ossible:
+This allo ws the net w ork administrator to reduce the net w ork load of translating
+large input les. F ourth, Go ogle REST API can b e in tegrated in to the system: this
+reduces the burden of text extraction from do cumen ts. A ccordingly , the use of the
+ETF as a cen tralized translation service is prop osed to impro v e studen t-orien ted
+learning outcomes.
+2.3 Biometric V oice Recognition In Securit y System
+(2014)
+This pap er describ es the design of a v oice recognition system that can iden tify
+an administrator's v oice. The system uses the MF CC metho d to extract v oice
+signal features and stores a reference v oice during the training phase. During the
+testing phase, the system compares the reference v oice with the v oice b eing tested to
+authen ticate the user. The system successfully recognizes the authen ticated user's
+v oice and rejects all other imp ostors' v oices. The output result is divided in to t w o
+categories: accepted and rejected. If the output is accepted, the Arduino will
+activ ate the magnet do or to unlo c k. If the output is rejected, the Arduino will k eep
+9
+--- Page 21 ---
+Chapter 2. LITERA TURE SUR VEY
+the magnet do or lo c k ed and sound a 1-second buzzer alarm. The system's output
+can b e obtained using MA TLAB sim ulation, whic h can indicate whether the user
+is b eing recognized or rejected. The system has b een tested and has successfully
+recognized the sp ecic user's v oice while rejecting other users' v oices. In conclusion,
+the system's accuracy in recognizing the user's v oice is successful and it pro vides a
+medium lev el of securit y .
+2.4 Automated Whiteb oard Lecture Video Summa-
+rization By Con ten t Region Detection And Rep-
+resen tation (2021)
+In this researc h pap er, researc hers ha v e prop osed a fully b ounding b o x detection-
+orien ted approac h to summarizing whiteb oard lecture video in terms of b oth k ey
+con ten t and k eyframes. W e in v estigated and compared Deep Metric Learning (DML)
+and Histogram of Gradien t (HoG) feature approac hes to represen t detected regions
+and found that HoG ac hiev ed b etter p erformance although DML sho ws promise.
+F urther, they prop osed an ecien t Spatio-T emp oral Graph (STG) based trac king
+sc heme using partial region feature regions that can handle gro wing and o ccluded
+handwritten con ten t to nd unique regions whic h are presen ted as k ey con ten t sum-
+maries. The STG along with a w eigh ted conict minimization sc heme to segmen t
+the video led to k eyframe summaries. Researc her's metho ds lead to p erformance
+comparable to state-of-the-art metho ds in terms of a v erage recall, f-measure as w ell
+as a v erage n um b er of summary k eyframes. A dditionally , the meta-data information
+suc h as frame n um b er and timestamps stored along with the no des and trac klets in
+their spatio-temp oral graphs could help in video na vigation.
+10
+--- Page 22 ---
+Chapter 2. LITERA TURE SUR VEY
+2.5 Articial In telligen t Based Video Analysis On
+The T eac hing In teraction P atterns In Classro om
+En vironmen t (2021)
+This study to ok the classro om with in teractiv e whiteb oard, in teractiv e television
+or mobile terminals as researc h scene, and utilized the ITIAS co ding system to
+analyze the classro om videos of 20 teac hing cases from four asp ects. Three t yp es
+of in teraction patterns and their c haracteristics of the tec hnology-ric h en vironmen t
+are extracted, whic h are summarized as immediate in teraction patterns: serious
+classro om atmosphere, fast-paced class and deep in teraction, w aiting in teraction
+patterns: relaxed classro om atmosphere, slo w-paced class and deep in teraction and
+shallo w in teraction patterns: relaxed classro om atmosphere, slo w-paced class and
+shallo w in teraction. In addition, the tec hnical elemen ts in the three t yp es of in ter-
+action patterns are not signican t.
+2.6 Implemen tation Of AI P op Bots And Its Al-
+lied Applications F or Designing Ecien t Cur-
+riculum In Early Childho o d Education(2022)
+This pap er examines the pro cess of creating, testing, and rening an inno v ativ e
+computational to olset and curriculum to help y oung c hildren learn ab out articial
+in telligence (AI). As articial in telligence (AI) b ecomes more common, so ciet y will
+face more c hallenges in dev eloping new ideas. P aren ts should fo cus on encouraging
+their c hildren's abilit y to think creativ ely from an early age. Due to AI's rapid
+expansion, it is imp erativ e that instructors learn ho w b est AI tec hniques can b e
+utilized for studen ts' academic success. Researc her observ ed that c hildren's capacit y
+to comprehend AI concepts w as p ositiv ely connected with the amoun t to that they
+11
+--- Page 23 ---
+Chapter 2. LITERA TURE SUR VEY
+w ere able to in v estigate AI concepts through the activities. It's time for a more
+comprehensiv e AI curriculum that includes more con ten t and can b e tailored to
+other circumstances, suc h as sc ho ols with older, non-programming pupils and non-
+exp ert teac hers. With the help of this researc h pap er, paren ts and grandparen ts
+ma y pro vide b etter educational exp eriences for their c hildren.
+2.7 Co-Designing A Real-Time Classro om Orc hes-
+tration T o ol T o Supp ort T eac her-Ai Comple-
+men tarit y (2019)
+This researc h presen ted an end-to-end case study and metho dological guidance on
+ho w classro om teac hers can b e meaningfully in v olv ed throughout the en tire design
+pro cess of a complex LA to ol. It is their hop e that as the eld of Learning Analytics
+matures, they will see more demonstrations of the b enets, opp ortunities, and c hal-
+lenges of co-designing LA to ols with teac hers, studen ts, paren ts, and other critical
+stak eholders. The eld of Learning Analytics (LA) is just b eginning to explore what
+it migh t mean to co-design LA to ols with stak eholders suc h as classro om teac hers
+and learners (Dollinger and Lo dge, 2018; Holstein et al., 2017b; Holstein, Hong, et
+al., 2018; Prieto-Alv arez et al., 2018).
+12
+--- Page 24 ---
+Chapter 3
+REQUIREMENTS AND ANAL YSIS
+3.1 Problem Denition
+Ov erall Problem: T raditional digital whiteb oards function fundamen tally as pas-
+siv e digitization to ols. While they pro vide a shared spatial can v as for dra wing and
+diagramming, they place the en tire cognitiv e burden on the user. P articipan ts m ust
+man ually draft complex diagrams from scratc h, summarize length y bac kground data,
+and extract external information without systemic assistance. As iden tied in recen t
+literature regarding tec hnology-enhanced learning, the lac k of in telligen t automa-
+tion in these collab orativ e w orkspaces sev erely limits pro ductivit y during fast-paced
+ideation and educational sessions. The core problem this pro ject addresses is ho w to
+ev olv e the whiteb oard from a passiv e can v as in to an activ e, Generativ e AI-p o w ered
+participan t.
+T o systematically tac kle this, the o v erall problem is divided in to the follo wing k ey
+sub-problems:
+Sub-Problem 1: Man ual Diagramming Ov erhead Constructing in tricate o w c harts
+or mind maps during a brainstorming session is time-consuming and disrupts the
+13
+--- Page 25 ---
+Chapter 3. REQUIREMENTS AND ANAL YSIS
+creativ e o w. The system m ust pro vide an automated mec hanism to con v ert natural
+language descriptions directly in to structured, rendered diagrams.
+Sub-Problem 2: Information Ov erload from Long-F orm Con ten t P artici-
+pan ts frequen tly reference length y video materials (e.g., three-hour lectures). Man-
+ually extracting relev an t notes from these videos is highly inecien t, necessitating
+an automated summarization pip eline capable of parsing large transcripts and con-
+v erting them in to actionable visual no des.
+Sub-Problem 3: F riction in Data Ingestion (OCR) Users often in tegrate
+information from rigid sources lik e screenshots or PDF slides. Man ually ret yping
+this information in tro duces friction, highligh ting the need for a robust, lo calized
+Optical Character Recognition (OCR) microservice to pull text directly on to the
+can v as.
+Sub-Problem 4: A ccessibilit y and W orko w In terruptions Relying solely
+on man ual inputs can hinder seamless in teraction, particularly for presen ters who
+need to switc h to ols while sp eaking. A hands-free in teraction metho d, suc h as a
+lo calized v oice assistan t, is required to main tain the presen tation o w and impro v e
+accessibilit y .
+3.2 Requiremen ts Sp ecication
+The requiremen ts of the AI-Enhanced Whiteb oard system are broadly divided in to
+functional and non-functional requiremen ts. The system m ust o v ercome the limita-
+tions of the existing man ual whiteb oard systems b y pro viding in telligen t, automated
+metho ds to ingest, transform, and structure data.
+14
+--- Page 26 ---
+Chapter 3. REQUIREMENTS AND ANAL YSIS
+3.2.1 F unctional Requiremen ts
+ In teractiv e Can v as Managemen t : The system m ust pro vide a digital
+can v as that supp orts m ulti-la y ered dra wing, v ector shap e generation (rect-
+angles, o v als, p olygons, connectors), and p ersisten t session state handling (un-
+do/redo).
+ Generativ e T ext Pro cessing : The system m ust accept natural language
+prompts from the user, query external LLMs (Go ogle Gemini, Gro q), and
+render generated ideas directly on to the can v as.
+ Automated Diagram Generation : The system m ust b e capable of receiv-
+ing m ulti-stage logical inputs and con v erting them automatically in to format-
+ted graphical o w c harts using an em b edded la y out engine (Graph viz).
+ Video Summarization Pip eline : The system m ust accept third-part y video
+URLs (e.g., Y ouT ub e), extract transcripts iterativ ely , summarize them in to
+condensed kno wledge graphs, and displa y them organically .
+ Optical Character Recognition (OCR) : The system m ust allo w users to
+select sub-regions of imp orted images or PDF les and accurately con v ert the
+pixel data in to editable text strings using a lo cal microserv er.
+ V oice Na vigation : The system m ust listen for and in terpret sp ok en com-
+mands, allo wing users to switc h standard to ols hands-free.
+3.2.2 Non-F unctional Requiremen ts
+ Resp onsiv eness : Hea vy pro cessing taskssuc h as hitting external LLM
+APIs, OCR pro cessing, or fetc hing Y ouT ub e transcriptsm ust activ ely run
+on bac kground threads to ensure the primary Tkin ter dra wing surface remains
+uid and resp onsiv e.
+15
+--- Page 27 ---
+Chapter 3. REQUIREMENTS AND ANAL YSIS
+ Usabilit y : The in terface m ust b e in tuitiv e, minimizing the learning curv e
+for users migrating from traditional ph ysical whiteb oards. The system m ust
+pro vide visual feedbac k (e.g., progress bars or alerts) when pro cessing long
+Gen AI requests.
+ Extensibilit y : The arc hitecture m ust b e lo osely coupled so that new Gen-
+erativ e AI mo dels can b e sw app ed in to the application logic as they b ecome
+a v ailable without requiring fundamen tal redesigns.
+ Reliabilit y and Error Handling : The system m ust correctly handle net-
+w ork in terruptions when querying APIs and m ust degrade gracefully b y alert-
+ing the user, rather than abruptly crashing out of the session.
+3.3 Planning and Sc heduling
+Planning and sc heduling are critical comp onen ts of the soft w are dev elopmen t life-
+cycle, ensuring that all pro ject milestones are met within the allotted timeframe.
+The dev elopmen t of the AI-Enhanced Whiteb oard w as brok en do wn in to manage-
+able phases, allo wing for the concurren t dev elopmen t of indep enden t mo dules and
+iterativ e in tegration.
+The pro ject sc hedule w as divided in to the follo wing k ey phases:
+1. Phase 1: Researc h and Protot yping : Initial planning, tec hnology stac k
+selection (Tkin ter, Flask, LLM APIs), and v alidation of core AI assumptions.
+2. Phase 2: F ron tend Arc hitecture : Dev elopmen t of the in teractiv e digital
+can v as, dra wing to ols, and user in terface comp onen ts.
+3. Phase 3: AI and API In tegration : Connecting the fron tend to external
+Generativ e AI pro viders (Gemini, Gro q) and establishing the logic for the
+automated diagram generation (Graph viz).
+16
+--- Page 28 ---
+Chapter 3. REQUIREMENTS AND ANAL YSIS
+4. Phase 4: Microservices and Data Pip elines : Dev elopmen t of the lo-
+calized Flask OCR microserv er and the Y ouT ub e long-form summarization
+c h unking algorithms.
+5. Phase 5: System In tegration and A ccessibilit y : Connecting the v oice as-
+sistan t, unifying all mo dules, and ensuring seamless async hronous bac kground
+task handling.
+6. Phase 6: T esting and Renemen t : Extensiv e in tegration testing, resolving
+con text-limit errors for long videos, UI/UX impro v emen ts, and nal pro ject
+do cumen tation.
+T o visually trac k pro ject progress and manage mo dule dep endencies, a Gan tt c hart
+and a Program Ev aluation Review T ec hnique (PER T) c hart w ere utilized. The
+Gan tt c hart pro vides a linear timeline of the pro ject phases, while the PER T c hart
+highligh ts the critical path and o v erlapping tasks, suc h as dev eloping the fron tend
+can v as concurren tly with the isolated OCR microserv er.
+Figure 3.1: Pro ject Planning Gan tt Chart
+17
+--- Page 29 ---
+Chapter 3. REQUIREMENTS AND ANAL YSIS
+Figure 3.2: Pro ject Planning PER T Chart
+3.4 Soft w are and Hardw are Requiremen ts
+T o ensure optimal p erformance of the AI-Enhanced Whiteb oard, sp ecic hardw are
+and soft w are prerequisites m ust b e met. The system utilizes lo cal microservices
+alongside cloud-based large language mo dels, necessitating a balance of lo cal com-
+pute and net w ork reliabilit y .
+3.4.1 Hardw are Requiremen ts
+ Pro cessor : In tel Core i5 / AMD Ryzen 5 (8th Generation or new er) to handle
+threaded bac kground op erations and seamless can v as rendering.
+ RAM : Minim um of 8GB; 16GB is recommended for smo oth op eration when
+running the lo cal OCR engine alongside the application.
+ Storage Capacit y : Minim um of 500 MB of free disk space for the pro ject
+les, required lo cal dep endencies (lik e T esseract and Graph viz binaries), and
+temp orary le cac hing.
+ Input Devices : Standard Keyb oard and Mouse (required for precision dra w-
+ing v ector manipulation). A functional Microphone is required to utilize the
+V oice Assistan t capabilities.
+ Net w ork : A stable Broadband in ternet connection is strictly required to query
+the external LLM APIs (Go ogle Gemini, Gro q) and do wnload Y ouT ub e tran-
+scripts.
+18
+--- Page 30 ---
+Chapter 3. REQUIREMENTS AND ANAL YSIS
+3.4.2 Soft w are Requiremen ts
+ Op erating System : Windo ws 10/11, macOS 11+, or Lin ux distributions
+(Ubun tu 20.04+). The soft w are is designed to b e highly cross-platform.
+ In terpreter : Python v ersion 3.8 or higher.
+ Core System Dep endencies :
+ T esseract OCR Engine : Must b e installed lo cally and added to the
+system P A TH for the Flask microserv er to pro cess image-to-text extrac-
+tions.
+ Graph viz : Must b e installed lo cally and added to the system P A TH to
+render the logical o w c harts and net w ork diagrams.
+ Key Python Libraries :
+ GUI & Gr aphics : Tkinter , Pillow (PIL) .
+ Backend & Micr oservic es : Flask , pytesseract .
+ AI Inte gr ation : google-generativeai , groq .
+ Data Parsing : yt-dlp , youtube-transcript-api , pyttsx3 , SpeechRecognition .
+3.5 Preliminary Pro duct Description
+The AI-Enhanced Whiteb oard is en visioned as an in telligen t, h ybrid w orkspace that
+merges an in teractiv e digital dra wing can v as with p o w erful Generativ e AI capa-
+bilities. The primary ob jectiv e is to transcend the traditional paradigm of digital
+whiteb oardswhic h act solely as passiv e recording mediumsb y in tro ducing proac-
+tiv e, cognitiv e to olsets designed to automate structured ideation.
+Core F unctions and Op erations:
+19
+--- Page 31 ---
+Chapter 3. REQUIREMENTS AND ANAL YSIS
+ Innite Collab orativ e Can v as : The foundational application op erates as a
+frictionless, innitely panning digital surface. Users can deplo y v ector dra wing
+to ols (p ens, dynamic shap es, and text insertion) to sk etc h their ideas man ually ,
+while main taining full gran ular con trol via underlying la y er managemen t and
+an innite undo/redo action stac k.
+ Generativ e Ideation Engine : Rather than starting from a blank page, users
+can in v ok e the 'Smart Idea' mo dule. By pro viding a natural language prompt,
+the system queries the Go ogle Gemini or Gro q LLMs to instan tly p opulate the
+can v as with structured, con textually relev an t brainstorming no des.
+ Automated Con ten t Structuring : The application functions as a dynamic
+diagramming engine. Lev eraging Graph viz, it in terprets descriptiv e text or
+ra w transcript data and programmatically routes, calculates, and dra ws in ter-
+connected o w c harts and logical sc hema directly on the can v as without man ual
+la y out adjustmen t.
+ Comprehensiv e Media Ingestion : The system activ ely ingests unstruc-
+tured external data. It features a robust OCR engine bac k ed b y a Flask mi-
+croserv er that a wlessly extracts editable text from imp orted images or PDF s.
+Concurren tly , it oers an em b edded Y ouT ub e parser capable of c h unking and
+summarizing m ulti-hour video lectures directly in to visual insigh ts.
+ F rictionless Na vigation : The application incorp orates v oice-activ ated to ol
+switc hing, enabling usersparticularly educators or presen tersto main tain
+an unin terrupted o w b y using simple v erbal commands (e.g., "Switc h to
+Eraser", "Select P en") rather than man ually na vigating to olbars.
+Ultimately , the pro duct functions as a highly synergistic ideation en vironmen t where
+users pro vide unstructured ideas, and the AI activ ely assists in structuring, expand-
+ing, and visualizing that data in real-time.
+20
+--- Page 32 ---
+Chapter 3. REQUIREMENTS AND ANAL YSIS
+3.6 Conceptual Mo dels
+The system arc hitecture of the AI-Enhanced Whiteb oard follo ws a h ub-and-sp ok e
+mo dular design. The primary ev en t lo op, driv en b y the Tkin ter graphical in ter-
+face, acts as the cen tral con troller in teracting with h uman inputs (mouse, k eyb oard,
+v oice). This cen tral h ub async hronously delegates in tensiv e op erations to sp ecialized
+p eripheral microservices and APIs to main tain in terface resp onsiv eness.
+Data Flo w Op erations:
+1. Input Stage : The user manipulates the can v as or issues a v oice command.
+Simple dra wing ev en ts are rendered directly . Complex requests (lik e "Extract
+text from this region" or "Generate an idea o w") emit sp ecic system ev en ts.
+2. Delegation Stage :
+ T ext extraction queries securely pass lo calized image arra ys to the Flask
+OCR microserv er.
+ Abstract prompts are wrapp ed in structural system-prompts and passed
+to the Go ogle Gemini or Gro q external APIs.
+ Y ouT ub e URLs trigger the yt-dlp pip eline to dynamically c h unk long-
+form transcripts b efore LLM pro cessing.
+3. Pro cessing and Rendering Stage : Once data is returned (e.g., Markdo wn
+structural diagrams or summarized text no des), the Graph viz engine mathe-
+matically calculates spatial la y outs. Finally , these la y outs are con v erted bac k
+in to primitiv e graphical v ectors and injected sequen tially in to the activ e Tk-
+in ter can v as la y er.
+Figure 3.3 illustrates the in tegrated o w b et w een the fron tend application, bac k end
+logic con trollers, and external Application Programming In terfaces (APIs).
+21
+--- Page 33 ---
+Chapter 3. REQUIREMENTS AND ANAL YSIS
+Figure 3.3: AI-Enhanced Whiteb oard Conceptual Arc hitecture Diagram
+22
+--- Page 34 ---
+Chapter 4
+SYSTEM DESIGN
+Describ es desired features and op erations in detail, including screen la y outs, business
+rules, pro cess diagrams, pseudo co de and other do cumen tation.
+4.1 Basic Mo dules
+In adherence to the divide-and-conquer principle, the AI-Enhanced Whiteb oard ar-
+c hitecture is segmen ted in to sev eral autonomous y et in terconnected mo dules. This
+mo dular arc hitectural approac h ensures scalabilit y and main tainabilit y .
+1. F ron tend UI and In teraction Mo dule A t the core of the user exp erience is
+the Tkin ter-based graphical fron tend. This mo dule manages the m ulti-la y ered in ter-
+activ e dra wing can v as, handles ev en ts suc h as v ector shap e manipulation (dra wing,
+resizing, grouping), trac ks the session state (undo/redo functionalit y), and go v erns
+the user in terface comp onen ts lik e to olbars, theming, and the w orkspace minimap.
+2. Generativ e AI Handler Mo dule This mo dule serv es as the primary con-
+duit b et w een the application and external Large Language Mo dels (LLMs) suc h as
+23
+--- Page 35 ---
+Chapter 4. SYSTEM DESIGN
+Go ogle Gemini and Gro q. It abstracts the API comm unications, constructs com-
+plex con text-a w are prompts for idea generation, and parses the returned JSON or
+markdo wn data to seamlessly p opulate the whiteb oard with in telligen t suggestions.
+3. Automated Diagramming Mo dule Unlik e traditional dra wing to ols, this
+mo dule lev erages Graph viz and sp ecialized parsing logic to con v ert natural language
+descriptions and text-based dep endencies in to structured o w c harts. It automati-
+cally calculates no de p ositions and routes connecting edges, injecting these mathe-
+matically constructed v ectors bac k in to the fron tend mo dule.
+4. Summarization and Data Pip eline Mo dule Designed to handle in tensiv e
+textual ingestion, this mo dule in terfaces with external video sources to do wnload
+long-form video transcripts. It utilizes a robust recursiv e c h unking algorithm to
+pro cess massiv e transcripts con tin uously without exceeding LLM con text limits, ul-
+timately deliv ering highly condensed, seman tic visual summaries.
+5. Computer Vision (OCR) Microserv er T o main tain fron tend uidness during
+hea vy pro cessing, text extraction op erates as an indep enden t microservice. Built
+utilizing Flask and the T esseract engine, this lo cal serv er pro vides a reliable REST
+API endp oin t. The fron tend passes image or PDF b ounding b o xes to the serv er,
+whic h rapidly returns standard text strings.
+6. V oice A ccessibilit y Mo dule Utilizing audio pro cessing libraries, this mo dule
+runs bac kground audio listeners. It captures user sp eec h data, in terprets in ten t, and
+translates v erbal instructions in to direct system commands to c hange to ols or trigger
+sp ecic w orko ws hands-free.
+4.2 Data Design
+Data design will consist of ho w data is organized, managed, and manipulated within
+the system. The AI-Enhanced Whiteb oard handles v olatile session data, serialized
+24
+--- Page 36 ---
+Chapter 4. SYSTEM DESIGN
+pro ject states, and conguration parameters.
+4.2.1 Sc hema Design
+Instead of relying on a traditional relational database (RDBMS), the AI-Enhanced
+Whiteb oard utilizes a ligh t w eigh t, le-based JSON do cumen t sc hema for p ersisten t
+storage. This approac h maximizes le p ortabilit y , allo wing users to sa v e and share
+their whiteb oard sessions eortlessly . The core sc hema, represen ted within `.aiwb`
+or `.json` les, is structured as follo ws:
+ metadata Ob ject : Con tains information ab out the le suc h as version (to
+ensure bac kw ard capabilit y) and timestamp .
+ can v as_state Ob ject : Holds the parameters of the user's w orkspace, suc h
+as background_color , zoom_level , and pan_offset .
+ items Arra y : A collection of all visual elemen ts on the can v as. Eac h item is
+a JSON ob ject with prop erties dening its state:
+ id : A unique string iden tier (UUID) for precise rendering and manipu-
+lation trac king.
+ type : A string en umerating the v ector t yp e (e.g., "rectangle", "o v al",
+"text", "line", "mindmap_no de").
+ coords : An arra y of co ordinate oats [x1, y1, x2, y2] represen ting the
+b ounding b o x.
+ attributes : A sub-ob ject storing st ylistic prop erties lik e fill , outline ,
+width , font , text , and tags .
+25
+--- Page 37 ---
+Chapter 4. SYSTEM DESIGN
+4.2.2 Data In tegrit y and Constrain ts
+T o ensure the application functions robustly and prev en ts data corruption during
+session sa ving/loading and AI generation, sev eral in tegrit y constrain ts are imple-
+men ted within the application logic:
+ Sc hema V alidation : Before a sa v ed `.json` or `.aiwb` le is loaded in to the
+can v as, a deserialization routine v alidates that the core prop erties ( items ,
+metadata ) exist and are correctly formatted. An y in v alidly structured le is
+rejected to prev en t can v as crashing.
+ T yp e Enforcemen t : When rendering shap es, the system enforces t yp e safet y .
+A type m ust strictly matc h existing dra wing metho ds, and co ordinates m ust
+b e v alid n umerical arra ys.
+ LLM P arsing Constrain ts : Data ingested from LLMs (Gemini/Gro q) often
+comes mixed in con v ersational text. The ai_tools_mixin.py enforces strict
+Regex extraction and JSON parsing constrain ts. If AI output is malformed,
+a fallbac k recursiv e retry mec hanism activ ates to request v alid structural data
+from the mo del.
+ Referen tial In tegrit y in Grouping : Using Tkin ter can v as tags, if a user
+groups sev eral items or dra ws o w c hart edges b et w een no des, the application
+constrain ts ensure that standard manipulations (mo ving, deleting) apply to all
+in ternally tagged comp onen ts sim ultaneously , prev en ting orphaned v ectors.
+4.3 Pro cedural Design
+Pro cedural design outlines the step-b y-step algorithms and exact data structures the
+AI-Enhanced Whiteb oard utilizes to p erform sp ecialized op erations, transforming
+ra w data and user in teractions in to nal system outputs.
+26
+--- Page 38 ---
+Chapter 4. SYSTEM DESIGN
+4.3.1 Logic Diagrams
+The logic diagrams illustrate the system's op erational o w, dening ho w user in-
+ten ts tra v erse the application arc hitecture. Figure 4.1 details the primary execution
+pro cess for AI in teraction and can v as up dating.
+Figure 4.1: AI-Enhanced Whiteb oard Logic Diagram
+4.3.2 Data Structures
+The pro cedural logic hea vily dep ends on sp ecialized data structures optimized for
+rapid can v as up dates and API transmission:
+ Dictionaries (Hash Maps) : Used to main tain the in ternal state of all can v as
+items (e.g., self.items[item_id] = attributes ). They oer O(1) lo okup
+time, whic h is essen tial for rendering real-time transformational up dates when
+dealing with thousands of v ectors.
+27
+--- Page 39 ---
+Chapter 4. SYSTEM DESIGN
+ Lists (Arra ys) : Used for managing undo/redo stac ks, preserving a historical
+sequence of can v as states.
+ Graph Data Structures : Within the automated diagramming mo dule, no de
+relationships are main tained as adjacency lists using standard dictionary struc-
+tures, allo wing graph tra v ersal algorithms and Graph viz parsing routines to
+easily na vigate connections.
+4.3.3 Algorithms Design
+The system implemen tation relies on sev eral k ey algorithms to function eectiv ely:
+1. Recursiv e T ranscript Ch unking Algorithm
+Input: Ra w, unltered Y ouT ub e text transcript strings (often exceeding con text
+limits).
+Output: Segmen ted arra ys, follo w ed b y a nal cohesiv e generativ e text summary .
+L o gic: T o b ypass LLM tok en limit barriers, the algorithm calculates the total string
+length. If the tok en coun t exceeds the mo del's threshold, it recursiv ely splits the text
+in to con tin uous c h unks. Eac h c h unk is summarized indep enden tly . The resulting
+summaries are then concatenated and summarized once more (recursiv e reduction)
+un til a nal, o v erarc hing summary is ac hiev ed.
+2. Inden tation-Based Flo w c hart P arsing Algorithm
+Input: A m ulti-line string generated b y an LLM, utilizing inden tation lev els to
+denote paren t-c hild hierarc hical no des.
+Output: Graph viz-compatible no des and edge directiv es.
+L o gic: The script iterates through eac h line, coun ting leading spaces to determine
+depth. It main tains a stac k of the most recen tly seen paren t no de at eac h depth
+lev el. When a c hild no de is read, an edge is programmatically created b et w een the
+curren t no de and the activ e paren t p ositioned at the depth - 1 lev el.
+28
+--- Page 40 ---
+Chapter 4. SYSTEM DESIGN
+3. Can v as Ob ject Ding Algorithm (Undo/Redo Managemen t)
+Input: Co ordinates of v ector manipulations b efore and after the ev en t.
+Output: Sequen tially restored graphical can v as state.
+L o gic: Instead of sa ving the en tire can v as pixel data, the algorithm stores state dis
+(what ob jects c hanged, b efore and after co ordinates). Up on an undo ev en t, it pushes
+the curren t state to the redo stac k, p ops the last c hange arra y from the undo stac k,
+and re-renders only those sp ecic mapp ed graphical items on the Tkin ter can v as.
+4.4 User in terface design
+Dene user, task, en vironmen t analysis and ho w y ou in tend to map those require-
+men ts in order to dev elop a User In terface. Describ e the external and in ternal
+comp onen ts and the arc hitecture of y our user in terface. Sho w some rough pictorial
+views of the user in terface and its comp onen ts.
+Figure 4.2: AI-Enhanced Whiteb oard UI Design
+29
+--- Page 41 ---
+Chapter 4. SYSTEM DESIGN
+4.5 Securit y Issues and Real-Time Considerations
+The AI-Enhanced Whiteb oard in tegrates traditional lo calized computing with re-
+mote cloud-based Generativ e AI services. This h ybrid op erational mo del in tro duces
+sp ecic real-time op erational considerations and securit y vulnerabilities that m ust
+b e activ ely mitigated to ensure system stabilit y and user data priv acy .
+4.5.1 Real-Time Considerations
+Because the whiteb oard is primarily a visual ideation to ol, main taining a uid 60
+F rames-P er-Second (FPS) in teractiv e can v as is paramoun t.
+ Async hronous Non-Blo c king Execution : Calling external Large Lan-
+guage Mo dels (LLMs) or pro cessing m ulti-hour Y ouT ub e transcripts can tak e
+an ywhere from 3 to 30 seconds. If executed on the main thread, the Tkin ter
+UI w ould freeze en tirely . T o prev en t this, all hea vy computation (API calls,
+Graph viz compilation, and OCR scanning) is strictly ooaded to bac kground
+daemon threads utilizing Python's threading mo dule.
+ Net w ork Latency and Timeout Handling : Real-time net w orks are in-
+heren tly unreliable. The system enforces strict timeout p olicies on all HTTP
+requests to Go ogle Gemini and Gro q. If an API endp oin t fails to resp ond
+within the acceptable threshold, the request is gracefully ab orted, and the
+user is notied via UI alerts without crashing the application state.
+ Concurren t Resource Managemen t : The lo cal Flask OCR microserv er
+and the main application m ust share lo cal hardw are resources safely . Asyn-
+c hronous queues are utilized to manage state transitions and ensure the Tkin-
+ter can v as is only up dated in a thread-safe manner once external data is fully
+retriev ed.
+30
+--- Page 42 ---
+Chapter 4. SYSTEM DESIGN
+4.5.2 Securit y Issues and Mitigation Arc hitecture
+Giv en the reliance on third-part y APIs and lo calized microserv ers, the system ar-
+c hitecture in tro duces sev eral attac k v ectors. The securit y p olicy is designed around
+the principles of least privilege, data isolation, and safe serialization.
+1. API Key Managemen t and Creden tial Exp osure :
+ Thr e at : Hardco ding sensitiv e API creden tials directly in to the source
+co de is a critical vulnerabilit y . If the rep ository is uploaded to a public
+v ersion con trol system, unauthorized actors could hijac k the API quotas,
+leading to sev ere nancial or service disruption.
+ Mitigation Policy : The system arc hitecture mandates the use of en viron-
+men t v ariables. All secrets are loaded dynamically at run time via a lo cal
+.env le using the python-dotenv library . This le is explicitly excluded
+from v ersion con trol systems (via .gitignore ), ensuring that p ersonal
+API k eys nev er lea v e the host mac hine.
+2. Data Priv acy and Cloud T ransmission :
+ Thr e at : Unin ten tional transfer of sensitiv e organizational data. Users of-
+ten brainstorm proprietary ideas or pull text from conden tial do cumen ts
+via OCR. Sending this data to external proprietary mo dels (Go ogle Gem-
+ini) p oses a priv acy risk.
+ Mitigation Policy : The arc hitecture implemen ts a strict transien t-data
+p olicy . The application establishes data transmission using HTTPS/TLS
+encryption. F urthermore, the application only sends the explicit nat-
+ural language prompts initiated b y the user or lo calized b ounding-b o x
+data extracted for OCR. The application do es not auto-sync the en tire
+can v as state to the cloud. Users are briefed on standard generativ e AI
+usage p olicies indicating that explicitly requested queries are transmitted
+externally .
+31
+--- Page 43 ---
+Chapter 4. SYSTEM DESIGN
+3. Microservice Exploitation (Lo calhost Binding) :
+ Thr e at : The indep enden t Flask microserv er used for lo calized OCR image
+pro cessing op erates o v er HTTP . If incorrectly congured to broadcast on
+all net w ork in terfaces (e.g., binding to 0.0.0.0 ), malicious actors on the
+same lo cal area net w ork (LAN) could in tercept requests or execute remote
+commands against the microserv er.
+ Mitigation Policy : The Flask OCR serv er is strictly hard-b ound to the
+lo opbac k in terface ( 127.0.0.1 ). This structural constrain t ensures that
+the p ort is completely in visible to an y external hardw are connected to
+the same net w ork router, isolating the op erational data strictly to the
+in ternal in ter-pro cess comm unication pip eline of the host mac hine.
+4. Deserialization and Co de Injection :
+ Thr e at : Pro ject states are serialized and sa v ed via JSON les ( .aiwb ).
+F urthermore, the generativ e AI returns textual outputs that dictate sys-
+tem b eha viors (suc h as no de placemen t). Malformed pa yloads or ma-
+licious JSON les could theoretically p ermit Remote Co de Execution
+(R CE) if ev aluated dynamically .
+ Mitigation Policy : Dynamic execution metho ds, suc h as Python's nativ e
+eval() , are completely banned from the pro ject arc hitecture. All ex-
+ternal pa yloads and sa v ed les are parsed exclusiv ely using strict JSON
+deco ders and regular expressions (Regex) that enforce strong t yp e-safet y
+and structural constrain ts. If an imp orted le or AI resp onse fails strict
+sc hema v alidation, the system drops the pa yload immediately to prev en t
+injection faults.
+32
+--- Page 44 ---
+Chapter 4. SYSTEM DESIGN
+4.6 T est Cases Design
+The testing strategy for the AI-Enhanced Whiteb oard fo cuses on v erifying the core
+functional mo dules, v alidating data transformations b et w een the fron tend and mi-
+croservices, and ensuring system resilience under adv erse conditions. The test cases
+are designed to detect logical errors, syn tax parsing faults, and net w ork failures with
+minimal eort.
+The primary conditions w e seek to test include:
+ Ensuring robust parsing of AI-generated resp onses (JSON and inden tation-
+based o w c harts).
+ V erifying that long-form Y ouT ub e transcripts are successfully c h unk ed, a v oid-
+ing LLM con text-length limits.
+ V alidating lo cal in tegration with the Flask OCR microserv er and Graph viz
+la y out engine.
+ Sim ulating net w ork failures to ensure the application degrades gracefully rather
+than crashing.
+T able 4.1 outlines the sp ecic b eha vioral test cases designed to ev aluate these con-
+ditions.
+33
+--- Page 45 ---
+Chapter 4. SYSTEM DESIGN
+T est ID T est Scenario Exp ected Output Success Criteria /
+Condition
+TC-01 Submit a structural
+la y out prompt to
+Gemini/Gro q.Returns Graph viz-
+compatible inden ta-
+tion syn tax.The UI correctly
+parses the leading
+spaces to gener-
+ate a nested visual
+o w c hart on the can-
+v as.
+TC-02 Input a malformed or
+con v ersational LLM
+resp onse.The parser lters
+con v ersational u
+and extracts the v alid
+sc hema.Regex or JSON
+v alidator strictly cap-
+tures the core no de
+structure without
+crashing or raising
+exceptions.
+TC-03 Request summa-
+rization of a 3-hour
+Y ouT ub e Lecture.The script creativ ely
+divides the transcript
+in to smaller recursiv e
+c h unks.Summaries are gener-
+ated in sequence. No
+`T ok enLimit` b ounds
+error o ccurs.
+TC-04 Select a sub-region of
+an imp orted PDF/Im-
+age for OCR pro cess-
+ing.The selected image ar-
+ra y is p osted to the lo-
+cal Flask serv er.Extracted strings are
+correctly returned and
+dynamically moun ted
+as text no des on to the
+Tkin ter can v as.
+TC-05 A ttempt an LLM API
+generation while dis-
+connected from the
+net w ork.The net w ork timeout
+triggers within an ac-
+ceptable duration.A w arning dialogue
+app ears notifying the
+user of connectivit y is-
+sues; the system do es
+not hang or terminate.
+TC-06 Sa v e the can v as
+w orkspace, including
+v ectors and group ed
+shap es.Creates an .aiwb do c-
+umen t con taining v ec-
+tor co ordinates and
+st ylistic attributes.Loading the le re-
+stores the la y out p er-
+fectly , with in teractiv e
+ob jects retaining their
+mo v able state.
+TC-07 Issue a v oice com-
+mand (e.g., "Switc h to
+Eraser") during activ e
+dra wing.The bac kground lis-
+tener detects the k ey-
+w ord target and trig-
+gers the UI ev en t.A ctiv e cursor switc hes
+seamlessly to the
+eraser without to olbar
+in terference.
+T able 4.1: F unctional and In tegration T est Cases
+34
+--- Page 46 ---
+Chapter 5
+IMPLEMENT A TION AND
+TESTING
+5.1 Implemen tation Approac hes
+The implemen tation of the AI-Enhanced Whiteb oard w as accomplished using a mo d-
+ular, top-do wn approac h, separating the system in to logical la y ers: the User In terface
+(F ron tend), Application Logic, AI In tegration, and External Microservices. The de-
+v elopmen t pro cess adhered to agile metho dologies, allo wing iterativ e dev elopmen t
+and con tin uous testing of individual features, primarily using Ob ject-Orien ted Pro-
+gramming (OOP) principles in Python.
+5.1.1 Key Implemen tation Strategies and Standards
+The follo wing strategies and standards w ere adopted during the implemen tation
+phase:
+ Programming Language and F ramew orks: The core application and
+graphical in terface w ere dev elop ed using Python 3.8+ and the standard Tkinter
+35
+--- Page 47 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+library . This ensures a ligh t w eigh t, cross-platform in teractiv e GUI without re-
+lying on hea vy external dep endencies for graphics rendering.
+ Microservices Arc hitecture for Hea vy T asks: T o prev en t blo c king the
+main UI thread during resource-hea vy tasks, a lo calized Flask microserv er
+( flask_ocr_server.py ) w as adopted. This serv er handles Optical Character
+Recognition (OCR) tasks using T esseract indep enden tly of the main applica-
+tion lo op, comm unicating via standard HTTP RESTful metho ds.
+ Mo dular Comp onen t Design: The system's co debase is hea vily mo dular-
+ized to promote co de reusabilit y and main tainabilit y .
+ Core can v as and ev en t handling logic are cen tralized in whiteboard.py .
+ User in terface customization and mo dern st yling wrapp ers are encapsu-
+lated in ui_components.py .
+ External services are standalone utilities, suc h as youtube_utils.py for
+video pro cessing and flowchart_utils.py for o w c hart generation.
+ Co ding Standards and Securit y: The implemen tation broadly conforms
+to PEP 8 st yle guidelines for Python co de readabilit y . F or securit y , sensitiv e
+information suc h as API k eys for Go ogle Gemini and Gro q (Llama-3) are
+strictly decoupled from the source co de and managed via en vironmen t v ariables
+using .env les and the python-dotenv library .
+ API In tegration and Error Handling: The in teraction with large lan-
+guage mo dels incorp orates robust fault tolerance. Implemen tations feature
+strict timeouts, structured prompts for parsable outputs (lik e JSON or DOT
+graphs), and structured fallbac k mec hanisms in the summarization and gener-
+ation pip elines to main tain system reliabilit y during API rate limits or net w ork
+failures.
+36
+--- Page 48 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+5.2 Co ding Details and Co de Eciency
+The implemen tation of the AI-Enhanced Whiteb oard in v olv es sev eral critical func-
+tions that handle can v as in teractions, AI pro cessing, and data sync hronization. The
+follo wing sections detail these core functions and the eciency standards main tained
+throughout the dev elopmen t.
+5.2.1 Co ding Details
+The tec hnical foundation of the system is built up on sev eral core functions that
+manage the orc hestration of user ev en ts, AI inference, and dynamic can v as up dates.
+1. Cen tral Ev en t Dispatc her ( paint in whiteboard.py )
+The paint function is the primary engine for pro cessing user in teractions. It dy-
+namically adapts its b eha vior based on the to ol selected b y the user, managing
+ev erything from freehand dra wing to complex ob ject mo v emen t.
+def paint(self, event):
+if self.shape == 'hand':
+self.pan(event)
+elif self.eraser_on:
+self.erase(event)
+elif self.shape == 'brush':
+self.on_drag(event)
+elif self.shape == 'select' and self.selected_objects:
+self.move_object(event)
+Explanation of the Co de F unctionalit y: This function acts as a real-time
+router. By utilizing conditional logic to delegate tasks to sp ecialized sub-functions
+37
+--- Page 49 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+lik e on_drag or move_object , it main tains a clean separation of concerns. This ar-
+c hitecture allo ws for the easy addition of new to ols (lik e the 'laser' or 'highligh ter')
+without mo difying the core ev en t lo op structure.
+2. AI Con ten t Generation Engine ( generate_ai_content in ai_tools_mixin.py )
+This function handles the critical task of comm unicating with Large Language Mo d-
+els to generate con ten t directly on to the can v as.
+def generate_ai_content(self, prompt):
+try:
+model = genai.GenerativeModel('gemini-2.5-flash')
+result = model.generate_content(prompt)
+response_text = result.text.strip()
+except Exception as e:
+response_text = self.restructure_text_with_ollama(prompt)
+self.create_text_object(cx, cy, text=response_text)
+Explanation of the Co de F unctionalit y: The function encapsulates the API
+in teraction logic, including prompt engineering and error handling. It implemen ts
+a fallbac k mec hanism that ensures user requests are fullled ev en during net w ork
+outages b y switc hing to lo cal inference via Ollama.
+3. Smart Connector Logic ( update_connected_lines in ai_tools_mixin.py )
+This function main tains the relational in tegrit y of o w c harts and mind maps b y
+ensuring that connectors sta y anc hored to their resp ectiv e no des during mo v emen t
+or resizing.
+def update_connected_lines(self, item_id):
+"""Updates all lines connected to this item."""
+38
+--- Page 50 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+for line_id, conn in self.connections.items():
+if conn['start'] == item_id or conn['end'] == item_id:
+points = self.get_best_route(conn['start'], conn['end'])
+if points:
+self.c.coords(line_id, *points)
+def get_best_route(self, start_id, end_id):
+"""Calculates orthogonal path between two objects."""
+p1 = self.get_anchors(start_id)['center']
+p2 = self.get_anchors(end_id)['center']
+mid_x = (p1[0] + p2[0]) / 2
+return [p1[0], p1[1], mid_x, p1[1], mid_x, p2[1], p2[0], p2[1]]
+Explanation of the Co de F unctionalit y: Unlik e static dra wing to ols, the smart
+connector logic uses geometric calculations to determine the shortest orthogonal path
+b et w een t w o b ounding b o xes. Whenev er a "paren t" ob ject is mo v ed, this function
+is triggered to re-calculate the (x, y) co ordinates of all asso ciated line segmen ts,
+pro viding a seamless "stic ky" connection eect.
+4. Do cumen t Pro cessing and PDF Imp ort ( import_pdf in ai_tools_mixin.py )
+This function allo ws the user to imp ort sp ecic pages from a PDF do cumen t directly
+on to the whiteb oard can v as.
+def import_pdf(self):
+doc = fitz.open(file_path)
+for page_num in valid_pages:
+page = doc.load_page(page_num - 1)
+pix = page.get_pixmap(matrix=fitz.Matrix(300/72, 300/72))
+high_res_img = Image.frombytes("RGB", [pix.width, pix.height], pix.samples)
+img_id = self.c.create_image(x, y, image=tk_img)
+39
+--- Page 51 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+Explanation of the Co de F unctionalit y: The function utilizes the PyMuPDF (tz)
+library to op en and render PDF pages. It implemen ts a high-resolution rendering
+strategy b y scaling the DPI to 300, ensuring that text remains sharp ev en when
+zo omed in. It also manages a High-Res Master cac he ( stored_images ) to main tain
+visual qualit y during can v as transformations.
+5. Mind Map La y out Engine ( create_mind_map in ai_tools_mixin.py )
+This complex function transforms structured JSON data in to a radial mind map
+la y out, featuring automated collision a v oidance.
+def create_mind_map(self, data):
+angle_step = 2 * math.pi / len(topic_nodes)
+for i, node in enumerate(topic_nodes):
+angle = i * angle_step
+tx = cx + min_radius * math.cos(angle)
+ty = cy + min_radius * math.sin(angle)
+self.move_node_center(node['id'], tx, ty)
+# Collision resolution loop
+for attempt in range(25):
+dx = tx + current_dist * math.cos(d_angle)
+dy = ty + current_dist * math.sin(d_angle)
+self.move_node_center(did, dx, dy)
+if not self.check_node_collision(did, buffer=30):
+break
+current_dist += 60
+Explanation of the Co de F unctionalit y: The engine op erates in m ultiple phases:
+(1) calculating the minim um circumference needed based on c hild no de dimensions,
+(2) radial placemen t of primary topics using trigonometric functions ( cos , sin ),
+40
+--- Page 52 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+and (3) a staggered la y out for detail no des. A critical comp onen t is the collision
+resolution lo op, whic h iterativ ely pushes o v erlapping no des further out un til a clear
+space is found, prev en ting visual clutter in large diagrams.
+6. Nativ e Flo w c hart Rendering ( draw_native_graphviz in ai_tools_mixin.py )
+T ranslates Graph viz-generated JSON data in to nativ e Tkin ter can v as ob jects, al-
+lo wing AI-generated diagrams to b e fully in teractiv e.
+def draw_native_graphviz(self, data, title="Generated Flowchart"):
+for edge in data.get('edges', []):
+# Parse Bezier points from Graphviz pos string
+line_id = self.c.create_line(*points, smooth=True, arrow=tk.LAST)
+for node in data.get('objects', []):
+x = base_x + float(pt[0]) * GRAPH_SCALE
+y = base_y + max_y * GRAPH_SCALE - (float(pt[1]) * GRAPH_SCALE)
+self.create_node(x, y, text=label, shape=shape)
+Explanation of the Co de F unctionalit y: Rather than rendering a static image,
+this function parses the Graph viz dot p ositions and co ordinates. It reconstructs
+the o w c hart using nativ e create_line and create_node calls. This allo ws the user
+to mo v e individual no des, edit text, or c hange colors of an AI-generated o w c hart
+as if they had dra wn it man ually .
+7. Con text-A w are Idea Generation ( execute_idea_generation in ai_tools_mixin.py )
+Lev erages the can v as con text to pro vide relev an t brainstorming suggestions to the
+user.
+def execute_idea_generation(self):
+# Determine Topic from selection
+41
+--- Page 53 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+if self.selected_objects:
+topic = self.c.itemcget(self.selected_objects[0], 'text')
+# Generate Hub-and-Spoke ideas
+for i, idea in enumerate(ideas):
+x = center_x + radius * math.cos(angle)
+y = center_y + radius * math.sin(angle)
+self.create_text_entry_display(idea, x, y)
+Explanation of the Co de F unctionalit y: This function scans the can v as for
+selected ob jects or recen t text en tries to build a con textual prompt for the LLM.
+It then generates related concepts and automatically arranges them in a h ub-and-
+sp ok e mo del around the original topic, facilitating a rapid digital brainstorming
+w orko w.
+8. Y ouT ub e to Mind Map Notes ( generate_youtube_notes in ai_tools_mixin.py )
+This function automates the extraction of k ey concepts from Y ouT ub e videos and
+visualizes them as an in teractiv e mind map.
+def generate_youtube_notes(self):
+url = self.modern_askstring("YouTube to Notes", "Enter URL:")
+summary = youtube_utils.get_video_summary(url)
+if isinstance(summary, dict):
+self.create_mind_map(summary)
+else:
+self.create_text_note(str(summary))
+Explanation of the Co de F unctionalit y: The function in tegrates the youtube_utils
+mo dule to fetc h video transcripts and generate structured summaries using AI. It dis-
+tinguishes b et w een structured JSON output (whic h it passes to the create_mind_map
+42
+--- Page 54 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+engine) and ra w text summaries, pro viding a v ersatile learning to ol that transforms
+video con ten t in to structured visual evidence.
+5.2.2 Co de Eciency
+Throughout the system implemen tation, strict co de eciency and optimization tec h-
+niques w ere applied to ensure resp onsiv e executiona critical comp onen t for hea vy
+bac kground op erations b ehind an in teractiv e GUI.
+LLM F allbac k Strategy Algorithm ( youtube_utils.py )
+def get_video_summary(url: str, format: str = "mindmap") -> dict | str:
+video_id = extract_video_id(url)
+if not video_id: raise ValueError("Invalid YouTube URL")
+# Fetch transcript using yt-dlp subsystem
+transcript = fetch_transcript(video_id)
+if not transcript: raise RuntimeError("Empty transcript")
+# Fallback Chain: Gemini -> Ollama -> Offline Statistical Model (LexRank)
+try:
+# First attempt: Google Gemini (Fastest, High context window)
+return summarize_text_with_gemini(transcript, format=format)
+except Exception as e:
+try:
+# First Fallback: Local LLM via Ollama (No API cost, local execution)
+return summarize_text_with_ollama(transcript, format=format)
+except Exception as e2:
+# Ultimate Fallback: NLTK LexRank summarization (Offline, Guaranteed uptime)
+return summarize_text_statistical(transcript)
+43
+--- Page 55 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+Explanation of the Co de F unctionalit y: The co de ab o v e manages the extrac-
+tion and generation pip eline for video summarizations. It is constructed to prioritize
+high-eciency execution while guaran teeing fault tolerance. The nested try-except
+blo c ks ensure that if the primary Gemini API fails (due to quota limits, API errors,
+or net w ork issues), the system automatically gracefully degrades and attempts to
+form ulate a resp onse using Ollama running lo cally on the user's hardw are. If lo cal
+congurations are insucien t to run Ollama , it degrades to a traditional NLP sta-
+tistical mo de utilizing LexRank . This sequen tial fallbac k arc hitecture w as adopted
+logically to maximize system reliabilit y and alw a ys guaran tee an output to the user
+in terface.
+ Con text Windo w Optimization (Recursiv e Ch unking): During sum-
+marizations using lo cal mo dels lik e Ollama, hardw are memory limits b ecome
+a primary constrain t constrain t. The co de implemen ts an automatic Recur-
+siv e Ch unking algorithm ( chunk_text ). If a transcript exceeds 800 w ords,
+it partitions the text in to 600-w ord logical blo c ks, pro cesses them iterativ ely ,
+and nally injects the sub-summaries in to a syn thesis prompt. This memory
+managemen t approac h en tirely mitigates out-of-memory con text crashes and
+signican tly optimizes inference o v erhead.
+ Decoupling Resource-Hea vy T asks (UI Resp onsiv eness): The appli-
+cation functionally ooads in tense tasks. F or instance, Optical Character
+Recognition algorithms are ooaded to an indep enden t async hronous mi-
+croserv er ( flask_ocr_server.py ), rather than executing them directly inside
+the Tkinter main mainloop() . This parallel optimization allo ws the white-
+b oard in terface to preserv e a high frame rate and user in teraction capabilit y
+during bac kground calculations, prev en ting UI freezing.
+ Ecien t I/O Garbage Collection: When temp orary resources are fetc hed
+to memorysuc h as temp orary .vtt caption structures from yt-dlp the util-
+ities emplo y rigorous Python finally handling blo c ks to execute le clean up
+44
+--- Page 56 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+( os.remove ). This strictly safeguards against p ersisten t storage leaks and
+temp orary registry sw elling during long w ork sessions.
+5.3 T esting Approac h
+The testing strategy for the AI-Enhanced Whiteb oard follo ws a h ybrid functional
+and comp onen t-based state mac hine mo del. Due to the div erse nature of the ap-
+plicationwhic h in v olv es GUI in teractions, strict data structures, in ternal JSON
+parsers, and external HTTP API requeststesting w as fundamen tally divided in to
+t w o ma jor scop es: Unit T esting and In tegration T esting.
+The primary framew ork utilized for automating these pro cedures is pytest . Both
+functional capabilities (suc h as dra wing shap es) and user-acceptance factors (suc h
+as handling API drop outs gracefully without confusing the user) w ere systemati-
+cally incorp orated in to the pro ject structure via an indep enden tly isolated tests/
+directory .
+5.3.1 Unit T esting
+Unit testing connes execution v alidation to individual sub-comp onen ts, isolating
+in ternal logic from external elemen ts to v erify algorithm precision indep enden tly .
+F or this pro ject, unit tests fo cused hea vily on strict bac k end utilities:
+ Mathematical Shap e Logic ( test_shape_logic.py ): V erifying strict co-
+ordinate trac king, scaling algorithms, and b ounding-b o x selections for can v as
+v ectors.
+ A ction Stac k V alidation ( test_undo_redo.py ): Conrming that the state-
+mac hine appropriately captures and records Ctrl+Z/Y sequences without en-
+coun tering memory leaks or data corruption.
+45
+--- Page 57 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+ T ext P arsing ( test_youtube_formats.py ): V alidating regex text-c h unking
+and ensuring LLM outputs can deserialize in to Python dictionaries.
+5.3.2 In tegrated T esting
+In tegrated testing ev aluates the in teraction b et w een in terconnected mo dules, bring-
+ing m ultiple utilities in to a unied execution en vironmen t to detect in terop erabilit y
+bugs, race conditions, and structural limits. F or the Whiteb oard, in tegrated testing
+v eried:
+ LLM F allbac k Pip eline ( test_youtube.py ): Sim ulating articial net w ork
+drop outs to v erify that the primary Gemini API gracefully transfers its pa yload
+requests do wn w ard to lo cal Ollama no des without in terrupting the main user
+session.
+ Can v as Data Hand-o ( test_smart_connectors.py ): T esting the ph ysical
+GUI rendering of connection lines anc horing to dynamically mo ving b oundary
+b o xes. This explicitly v eries the sync hronicit y b et w een Tkinter co ordinate
+represen tations and the geometric bac k end arra ys.
+ Microserv er OCR In teraction: Utilizing sp ecialized test wrapp ers to con-
+rm the Tkin ter clien t accurately formats image b yte-arra ys via POST requests
+to the Flask flask_ocr_server.py instance, activ ely measuring latency and
+transmission limits.
+5.4 Mo dications and Impro v emen ts
+Throughout the iterativ e testing phases, sev eral bugs, limitations, and edge-case
+errors w ere disco v ered within the AI in tegration parameters and the core graphical
+46
+--- Page 58 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+in terfaces. T o impro v e system resp onsiv eness, stabilit y , and reliabilit y , the follo wing
+ma jor mo dications w ere implemen ted:
+ Recursiv e Ch unking for Memory Exhaustion Mitigation: During in te-
+grated testing of the Y ouT ub e summarization mo dule, it w as disco v ered that
+pro cessing long-form videos (exceeding 1 hour) caused lo cal Ollama mo dels to
+crash abruptly due to out-of-memory con text windo w exhaustion. T o resolv e
+this, a recursiv e text c h unking algorithm w as authored ( chunk_text ). This
+mo dication partitions massiv e transcripts in to 600-w ord blo c ks and pro cesses
+them sequen tially b efore syn thesizing a nal o v erview, en tirely eliminating
+systemic memory crashes.
+ LLM F allbac k Prioritization Restructuring: Initial iterations of the
+pro ject relied hea vily on lo cal mo dels, resulting in noticeable latency b ottle-
+nec ks. Observ ation during testing led to a complete mo dication of the logic
+pip eline inside youtube_utils.py . The system w as rewritten to prioritize
+Go ogle Gemini via the generativeai library as the principal pro cessor, rele-
+gating Ollama to a secondary fallbac k safet y net. This impro v emen t drastically
+reduced summarization w ait times from min utes to seconds.
+ Flo w c hart Engine Syn tax Standardization: In tegration testing of the
+"Magic Flo w c hart" feature rev ealed that Large Language Mo dels o ccasionally
+halluincated syn tax con taining uncon trolled sp ecial c haracters, causing the
+Graphviz renderer to crash and thro w sev ere exception errors. T o stabilize
+the o w c hart generation, the parser inside flowchart_utils.py w as hea v-
+ily mo died to strictly enforce the "Flo w c hart F un" inden tation structure.
+Supplemen tary prompt engineering w as also added to instruct the mo dels to
+sanitize no de lab els, resolving the generation errors.
+ Microserv er Async hronicit y V erication: During user-acceptance test-
+ing, initiating the T esseract Optical Character Recognition (OCR) directly
+47
+--- Page 59 ---
+Chapter 5. IMPLEMENT A TION AND TESTING
+from the Tkin ter application paused the in terface thread, causing a frozen
+screen. Consequen tly , the OCR functionalit y w as decoupled and transformed
+in to a standalone Flask microserv er ( flask_ocr_server.py ). This arc hitec-
+tural impro v emen t allo ws the Tkin ter GUI to a w ait resp onses async hronously
+without dropping frames, massiv ely impro ving user exp erience metrics.
+48
+--- Page 60 ---
+Chapter 6
+RESUL TS AND DISCUSSION
+6.1 T esting Approac h
+The testing of the AI Enhanced Whiteb oard follo w ed the Agile mo del with functional
+and user-acceptance testing approac hes.
+Eac h mo dule w as tested individually using blac k-b o x testing to v erify that inputs
+pro duced exp ected outputs.
+T est Case ID TC01
+T est Scenario Conrm displa y of whiteb oard after co de execution.
+T est Steps 1. Go to the source co de and run the main le.
+T est Data Displa y whiteb oard.
+Exp ected Result The whiteb oard is displa y ed successfully .
+A ctual Result As exp ected.
+P ass/F ail P ass
+T able 6.1: T est Case: Whiteb oard Displa y V erication
+49
+--- Page 61 ---
+Chapter 6. RESUL TS AND DISCUSSION
+Figure 6.1: TC01: Whiteb oard Displa y Result
+T est Case ID TC02
+T est Scenario V erify dra wing functionalit y .
+T est Steps 1. Op en the digital whiteb oard application.
+2. Select the p en to ol from the to olbar.
+3. Dra w a simple shap e (e.g., circle or square) on the whiteb oard.
+T est Data Dra wing to ols and can v as.
+Exp ected Result The shap e is dra wn accurately on the whiteb oard.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.2: T est Case: Dra wing F unctionalit y V erication
+Figure 6.2: TC02: Dra wing F unctionalit y Result
+50
+--- Page 62 ---
+Chapter 6. RESUL TS AND DISCUSSION
+T est Case ID TC03
+T est Scenario V erify eraser functionalit y .
+T est Steps 1. Dra w a shap e on the whiteb oard.
+2. Select the eraser to ol from the to olbar.
+3. Erase part of the shap e dra wn.
+T est Data Eraser to ol and dra wn shap es.
+Exp ected Result The selected part of the shap e is erased successfully .
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.3: T est Case: Eraser F unctionalit y V erication
+Figure 6.3: TC03: Eraser F unctionalit y Result
+T est Case ID TC04
+T est Scenario V erify the undo and redo functionalit y .
+T est Steps 1. Dra w m ultiple shap es on the whiteb oard.
+2. Clic k the undo button.
+T est Data Dra wing to ols and undo,redo button.
+Exp ected Result The last dra wn shap e is remo v ed and it can also b e restored.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.4: T est Case: Undo/Redo F unctionalit y V erication
+51
+--- Page 63 ---
+Chapter 6. RESUL TS AND DISCUSSION
+Figure 6.4: TC04: Undo/Redo F unctionalit y Result
+T est Case ID TC05
+T est Scenario V erify sa ving the whiteb oard con ten t.
+T est Steps 1. Dra w some shap es or text on the whiteb oard.
+2. Clic k the sa v e button.
+3. Cho ose a lo cation and sa v e the le.
+T est Data Dra wing to ols, shap es, text, sa v e button.
+Exp ected Result The whiteb oard con ten t is sa v ed as an image or le in the
+c hosen lo cation.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.5: T est Case: Sa v e F unctionalit y V erication
+(a) Men u Selection
+ (b) Sa v e Dialog
+ (c) Sa v ed Con ten t
+Figure 6.5: TC05: Sa v e F unctionalit y Results
+52
+--- Page 64 ---
+Chapter 6. RESUL TS AND DISCUSSION
+T est Case ID TC06
+T est Scenario Op ening the sa v ed whiteb oard.
+T est Steps 1. Clic k on Op en le button.
+2. Select the sa v ed whiteb oard from system and op en it.
+T est Data Dra wing to ols, shap es, text, sa v e button.
+Exp ected Result The whiteb oard is correctly op ened and is editable.
+A ctual Result As Exp ected.
+P ass/F ail F ail
+T able 6.6: T est Case: Op en Sa v ed Whiteb oard V erication
+(a) Whiteb oard UI
+ (b) Op ening File
+(c) Restored State (Ra w)
+ (d) Final Render
+Figure 6.6: TC06: Op en Sa v ed Whiteb oard Results
+53
+--- Page 65 ---
+Chapter 6. RESUL TS AND DISCUSSION
+T est Case ID TC07
+T est Scenario V erify clearing whiteb oard functionalit y .
+T est Steps 1. Dra w a shap e and add text to the whiteb oard.
+2. Clic k the clear button.
+T est Data Clear the whiteb oard.
+Exp ected Result Whiteb oard is cleared successfully .
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.7: T est Case: Clear Whiteb oard F unctionalit y V erication
+Figure 6.7: TC07: Clear Whiteb oard Result
+T est Case ID TC08
+T est Scenario V erify image upload functionalit y .
+T est Steps 1. Op en the digital whiteb oard application.
+2. Clic k on the 'Extract text from image' button.
+3. Select an image le from the system.
+T est Data Image le.
+Exp ected Result The image is uploaded and displa y ed on the whiteb oard.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.8: T est Case: Image Upload F unctionalit y V erication
+54
+--- Page 66 ---
+Chapter 6. RESUL TS AND DISCUSSION
+(a) Extraction T o ol
+ (b) Image Selection
+ (c) Uploaded Image
+Figure 6.8: TC08: Image Upload Results
+T est Case ID TC09
+T est Scenario V erify text extraction from an y t yp e of image fromat.
+T est Steps 1. Upload an image with .png format.
+2. Clic k on Upload button.
+3. Upload an image with .jpg format.
+4. Clic k on Upload button.
+5. Upload an image with .jp eg format.
+6. Clic k on Upload button.
+7. Upload an image with .bmp format.
+8. Clic k on Upload button.
+9. Upload an image with .ti format.
+10. Clic k on Upload button.
+T est Data Image with clear prin ted text.
+Exp ected Result The text is extracted accurately and displa y ed on the white-
+b oard.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.9: T est Case: Image F ormat T ext Extraction V erication
+(a) Extraction Progress
+ (b) Extraction Results
+Figure 6.9: TC09: Image F ormat T ext Extraction Results
+55
+--- Page 67 ---
+Chapter 6. RESUL TS AND DISCUSSION
+T est Case ID TC10
+T est Scenario V erify text extraction from a clear prin ted text image.
+T est Steps 1. Upload an image with clear prin ted text.
+2. Clic k on the 'Extract T ext' button.
+T est Data Image with clear prin ted text.
+Exp ected Result The text is extracted accurately and displa y ed on the white-
+b oard.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.10: T est Case: Clear Prin ted T ext Extraction V erication
+Figure 6.10: TC10: Clear Prin ted T ext Extraction Result
+T est Case ID TC11
+T est Scenario V erify text extraction from a handwritten text.
+T est Steps 1. Dra w some text on the whiteb oard.
+2. Clic k on the 'Extract T ext' button.
+T est Data Handwritten text.
+Exp ected Result The text is extracted and displa y ed on the whiteb oard,though
+accuracy ma y v ary .
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.11: T est Case: Handwritten T ext Extraction V erication
+56
+--- Page 68 ---
+Chapter 6. RESUL TS AND DISCUSSION
+Figure 6.11: TC11: Handwritten T ext Extraction Result
+T est Case ID TC12
+T est Scenario V erify text extraction when no text is presen t in the image.
+T est Steps 1. Upload an image with no text.
+2. Clic k on the 'Extract T ext' button.
+T est Data Image with no text.
+Exp ected Result The system should indicate no text found and not displa y an y
+text.
+A ctual Result No text found message displa y ed.
+P ass/F ail P ass
+T able 6.12: T est Case: No T ext Image Extraction V erication
+Figure 6.12: TC12: No T ext Image Extraction Result
+57
+--- Page 69 ---
+Chapter 6. RESUL TS AND DISCUSSION
+T est Case ID TC13
+T est Scenario V erify text extraction cursiv e text in the image.
+T est Steps 1. Upload an image with cursiv e text.
+2. Clic k on the 'Extract T ext' button.
+T est Data Image with cursiv e text.
+Exp ected Result The system should extract cursiv e text from image
+A ctual Result W rong text displa y ed.
+P ass/F ail F ail
+T able 6.13: T est Case: Cursiv e T ext Image Extraction V erication
+Figure 6.13: TC13: Cursiv e T ext Image Extraction Result
+T est Case ID TC14
+T est Scenario V erify v oice assistan t activ ation.
+T est Steps 1. Op en the digital whiteb oard application.
+2. Clic k on the 'A ctiv ate V oice Assistan t' button.
+T est Data V oice command "Hey Assistan t".
+Exp ected Result The v oice assistan t is activ ated and ready to tak e commands.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.14: T est Case: V oice Assistan t A ctiv ation V erication
+58
+--- Page 70 ---
+Chapter 6. RESUL TS AND DISCUSSION
+Figure 6.14: TC14: V oice Assistan t A ctiv ation Result
+T est Case ID TC15
+T est Scenario V erify v oice command for text input.
+T est Steps 1. A ctiv ate the v oice assistan t.
+2. Giv e the v oice command "W rite 'Hello W orld'".
+T est Data V oice command "W rite 'Hello W orld'".
+Exp ected Result The text "Hello W orld" is written on the whiteb oard.
+A ctual Result T ext "Hello W orld" written as "Hello W ord".
+P ass/F ail P ass
+T able 6.15: T est Case: V oice Command T ext Input V erication
+Figure 6.15: TC15: V oice Command T ext Input Result59
+--- Page 71 ---
+Chapter 6. RESUL TS AND DISCUSSION
+T est Case ID TC16
+T est Scenario V erify v oice command for dra wing shap es.
+T est Steps 1. A ctiv ate the v oice assistan t.
+2. Giv e the v oice command "Dra w a rectangle".
+T est Data V oice command "Dra w a rectangle".
+Exp ected Result The rectangle v ector shap e is dra wn automatically on the can-
+v as.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.16: T est Case: V oice Command Shap e Dra wing
+(a) V oice A ctiv ation
+ (b) Shap e Generation
+Figure 6.16: TC16: V oice Command Shap e Dra wing Results
+60
+--- Page 72 ---
+Chapter 6. RESUL TS AND DISCUSSION
+T est Case ID TC17
+T est Scenario V erify Y ouT ub e video summarization functionalit y .
+T est Steps 1. Clic k on the 'Y ouT ub e Summarizer' to ol.
+2. En ter a v alid Y ouT ub e Video URL.
+3. Clic k "Generate Summary".
+T est Data V alid 10-min ute long instructional Y ouT ub e URL.
+Exp ected Result System extracts the transcript, pro cesses it via LLM, and cre-
+ates a visual summary map.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.17: T est Case: Y ouT ub e Summarization V erication
+(a) Summary Generation
+ (b) Visual Map Result
+Figure 6.17: TC17: Y ouT ub e Summarization Results
+61
+--- Page 73 ---
+Chapter 6. RESUL TS AND DISCUSSION
+T est Case ID TC18
+T est Scenario V erify automated Magic Flo w c hart generation.
+T est Steps 1. Select the 'Magic Flo w c hart' to ol.
+2. Describ e a system design (e.g. "User logs in, then
+database c hec ks creden tials").
+3. Press 'Generate'.
+T est Data Natural language description of a login pro cess.
+Exp ected Result Graph viz generates a visual no de connection on the can v as
+according to the text.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.18: T est Case: AI Flo w c hart Generation V erication
+Figure 6.18: TC18: AI Flo w c hart Generation Result
+62
+--- Page 74 ---
+Chapter 6. RESUL TS AND DISCUSSION
+T est Case ID TC19
+T est Scenario V erify smart connector lines anc hor dynamically to mo ving
+shap es.
+T est Steps 1. Dra w t w o distinct shap es on the b oard.
+2. Connect them using the Connector T o ol.
+3. Select and drag one of the shap es across the can v as.
+T est Data Initialized v ector shap es and connector line.
+Exp ected Result The connector line should recalculate its tra jectory and re-
+main attac hed to the shap e.
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.19: T est Case: Smart Connectors Logic V erication
+(a) Initial Connection
+ (b) Dragging Shap e
+ (c) Dynamic Anc horing
+Figure 6.19: TC19: Smart Connectors Logic Results
+63
+--- Page 75 ---
+Chapter 6. RESUL TS AND DISCUSSION
+T est Case ID TC20
+T est Scenario V erify LLM suggests ideas based on curren t whiteb oard la y-
+out.
+T est Steps 1. Dra w a no de lab elled "Mac hine Learning".
+2. Select the ob ject and clic k 'AI Idea Suggestion'.
+T est Data Con textual lab el "Mac hine Learning".
+Exp ected Result Gemini/Gro q LLM prop oses relev an t connected no des lik e
+"Sup ervised Learning", "Unsup ervised Learning", "Rein-
+forcemen t Learning".
+A ctual Result As Exp ected.
+P ass/F ail P ass
+T able 6.20: T est Case: AI Idea Suggestion V erication
+Figure 6.20: TC20: AI Idea Suggestion Result
+6.2 User Do cumen tation
+This section pro vides a comprehensiv e guide to the features and op erations of the
+AI-Enhanced Whiteb oard.
+64
+--- Page 76 ---
+Chapter 6. RESUL TS AND DISCUSSION
+6.2.1 Getting Started
+T o launc h the application, run the whiteboard.py le from the source directory .
+Up on execution, the main digital whiteb oard in terface will b e displa y ed, as sho wn
+in Figure 6.21.
+Figure 6.21: Main Whiteb oard In terface
+6.2.2 Core Whiteb oard Op erations
+The application pro vides standard digital whiteb oard to ols accessible via the sidebar
+and top men us:
+ Dra wing T o ol: Select the p en icon to dra w freehand shap es or write text on
+the can v as.
+ Eraser T o ol: Use the eraser to remo v e sp ecic parts of y our dra wings.
+ Undo/Redo: Rev ert or restore actions using the na vigation buttons.
+ Can v as Managemen t: Clear the en tire b oard or sa v e y our curren t w ork as
+an .aiwb or image le.
+65
+--- Page 77 ---
+Chapter 6. RESUL TS AND DISCUSSION
+6.2.3 AI-P o w ered F eatures
+The AI-Enhanced Whiteb oard in tegrates sev eral adv anced mo dules to assist in pro-
+ductivit y and creativ e w orko ws.
+6.2.3.1 OCR and T ext Extraction
+Users can upload images or handwritten notes to extract text directly on to the
+can v as. The system supp orts m ultiple image formats including PNG, JPG, and
+BMP .
+1. Clic k the 'Extract T ext' to ol.
+2. Select an image from y our lo cal system.
+3. The AI mo del pro cesses the image and renders the detected text on the white-
+b oard.
+Figure 6.22: T ext Extraction from Image Result
+6.2.3.2 V oice Assistan t In tegration
+A hands-free v oice assistan t allo ws users to con trol the whiteb oard using natural
+language.
+66
+--- Page 78 ---
+Chapter 6. RESUL TS AND DISCUSSION
+ A ctiv ation: Clic k the microphone icon to activ ate the listener.
+ Commands: Y ou can sa y commands lik e "W rite 'Pro ject Meeting'" or "Dra w
+a rectangle".
+Figure 6.23: V oice Assistan t In teraction
+6.2.3.3 Y ouT ub e Video Summarization
+This to ol con v erts instructional videos in to visual summaries.
+1. Op en the 'Y ouT ub e Summarizer' to ol.
+2. P aste the video link.
+3. Clic k 'Generate Summary' to receiv e a structured map of the video's con ten t
+on the can v as.
+67
+--- Page 79 ---
+Chapter 6. RESUL TS AND DISCUSSION
+Figure 6.24: Y ouT ub e Video Summary Visual Map
+6.2.3.4 AI Magic Flo w c hart
+Users can describ e a system or pro cess in natural language, and the system will
+automatically generate a professional o w c hart. F or example, describing a "Login
+Pro cess" will generate connected no des for "En ter Creden tials", "V alidate", and
+"A ccess Gran ted".
+Figure 6.25: Generated Magic Flo w c hart
+6.2.4 In telligen t In teractions
+The whiteb oard also features smart connectors that anc hor to shap es dynamically .
+When y ou mo v e a shap e, the connector lines recalculate their paths to sta y attac hed.
+68
+--- Page 80 ---
+Chapter 6. RESUL TS AND DISCUSSION
+F urthermore, the 'AI Idea Suggestion' to ol pro vides con textual brainstorming b y
+suggesting related topics based on what y ou ha v e already dra wn or written.
+69
+--- Page 81 ---
+Chapter 7
+Conclusion
+The AI-Enhanced Whiteb oard successfully in tegrates cutting-edge articial in telli-
+gence tec hnologies to rev olutionize the traditional digital can v as. By merging tra-
+ditional dra wing to ols with adv anced Generativ e AI, the system transforms from a
+passiv e displa y surface in to an activ e cognitiv e collab orator.
+The in tegration of a V oice Assistan t pro vides an in teractiv e and hands-free con-
+trol la y er, allo wing users to switc h to ols and input text through natural language
+commands. This feature signican tly streamlines the creativ e w orko w b y reducing
+man ual men u in teractions. Optical Character Recognition (OCR) , p o w ered
+b y a lo calized T esseract Flask microserv er, ensures seamless text extraction from
+images and PDF s. This functionalit y not only sa v es time but also preserv es the in-
+tegrit y of handwritten notes and prin ted data, making them editable and searc hable
+within the digital w orkspace.
+One of the pro ject's standout ac hiev emen ts is its abilit y to transform complex,
+unstructured data in to clear visual represen tations. Using Graph viz and NLP-
+driv en engines , the system automatically generates professional o w c harts and
+radial mind maps from natural language descriptions or Y ouT ub e video transcripts.
+The implemen tation of a Recursiv e Ch unking and Summarization pip eline
+70
+--- Page 82 ---
+Chapter 7. Conclusion
+allo ws the system to pro cess long-form con ten t exceeding three hours in length,
+o v ercoming the con text windo w limitations of standard Large Language Mo dels.
+The pro ject lev erages high-p erformance mo dels lik e Go ogle Gemini and Gro q
+(Llama-3) for real-time ideation and brainstorming. T o ensure system reliabilit y
+and uptime, a robust Multi-tiered F allbac k Strategy w as implemen ted, grace-
+fully transitioning b et w een cloud APIs, lo cal inference via Ollama , and oine sta-
+tistical mo dels when necessary .
+In conclusion, the AI-Enhanced Whiteb oard is a transformativ e to ol that com bines
+Computer Vision, Sp eec h Recognition, and Generativ e AI to signican tly enhance
+the h uman pro ductivit y cycle. By impro ving the w a y information is captured, pro-
+cessed, and visualized, this inno v ativ e solution promotes greater eciency and cre-
+ativit y in b oth professional and educational settings. The successful implemen tation
+of this pro ject underscores the immense p oten tial of AI to augmen t h uman capabil-
+ities and driv e the future of collab orativ e digital w orkspaces.
+71
+--- Page 83 ---
+Appendix A
+Supplementary Details
+A.1 In tro duction
+The app endix pro vides additional supp orting material that complemen ts the main
+b o dy of the pro ject rep ort. It includes extended tec hnical details, mathematical
+represen tations, sample co de structures, and user-related do cumen tation whic h are
+essen tial for deep er understanding but not included in the main c hapters to main tain
+clarit y and readabilit y .
+As stated in the pro ject rep ort structure guidelines, detailed con ten t suc h as deriv a-
+tions, implemen tation sp ecics, and extended results are included here to supp ort
+ev aluation without making the main rep ort tedious.
+72
+--- Page 84 ---
+App endix A. Supplementary Details
+A.2 Mathematical Represen tation of Key Mo dules
+A.2.1 OCR Pro cessing Mo del
+The Optical Character Recognition system con v erts an input image I(x, y) in to
+extracted text T :
+T=OCR (I(x, y)) (A.1)
+Where:
+I(x, y) = pixel in tensit y function
+T = extracted textual output
+A.2.2 Recursiv e Summarization Algorithm
+T o handle long video transcripts, the system utilizes a recursiv e reduction function
+f :
+Sfinal=f(f(S1) +f(S2) + · · ·+f(Sn)) (A.2)
+Where:
+Si = segmen ted transcript c h unks
+f(Si) = summarized c h unk
+Sfinal = nal summarized output
+73
+--- Page 85 ---
+App endix A. Supplementary Details
+A.2.3 Flo w c hart Generation Logic
+Graph structure represen tation for diagrams:
+G= (V, E) (A.3)
+Where:
+V = set of no des (ideas/tasks)
+E = set of edges (relationships)
+A.3 Sample Co de Snipp ets
+A.3.1 OCR Microservice (Flask)
+from flask import Flask, request, jsonify
+import pytesseract
+from PIL import Image
+app = Flask(__name__)
+@app.route('/ocr', methods=['POST'])
+def ocr():
+file = request.files['image']
+img = Image.open(file)
+text = pytesseract.image_to_string(img)
+return jsonify({'text': text})
+74
+--- Page 86 ---
+App endix A. Supplementary Details
+if __name__ == "__main__":
+app.run(host="127.0.0.1", port=5000)
+A.3.2 Flo w c hart P arsing Logic
+def parse_flowchart(text):
+lines = text.split('\n')
+stack = []
+graph = []
+for line in lines:
+level = len(line) - len(line.lstrip())
+node = line.strip()
+while stack and stack[-1][0] >= level:
+stack.pop()
+if stack:
+graph.append((stack[-1][1], node))
+stack.append((level, node))
+return graph
+A.4 User Do cumen tation
+A.4.1 System Requiremen ts
+ OS: Windo ws / Lin ux / macOS
+75
+--- Page 87 ---
+App endix A. Supplementary Details
+ RAM: Minim um 8 GB
+ Soft w are: Python 3.8+, T esseract OCR, Graph viz
+A.4.2 Steps to Run the Application
+1. Install required libraries using:
+pip install -r requirements.txt
+2. Start OCR serv er:
+python ocr_server.py
+3. Run main application:
+python main.py
+4. Use GUI to dra w, upload images, or generate AI o w c harts.
+A.4.3 F eatures Usage
+ Dra wing T o ols: Create shap es and diagrams.
+ OCR T o ol: Extract text from images.
+ V oice Assistan t: Con trol to ols via sp eec h.
+ AI Flo w c hart Generator: Con v ert text in to diagrams.
+ Video Summarizer: Generate notes from Y ouT ub e videos.
+76
+--- Page 88 ---
+App endix A. Supplementary Details
+A.5 A dditional T est Case Results
+T est Case Description Output
+TC-01 Flo w c hart Generation Correct structured diagram
+TC-02 OCR Extraction A ccurate text detection
+TC-03 V oice Command Successful to ol switc hing
+TC-04 Video Summary Condensed meaningful output
+T able A.1: Supplemen tary T est Case Results
+A.6 Limitations and F uture Scop e
+A.6.1 Limitations
+ Requires in ternet for AI APIs.
+ P erformance dep ends on system hardw are.
+ OCR accuracy ma y v ary for handwritten text.
+A.6.2 F uture Enhancemen ts
+A detailed roadmap for future dev elopmen t is presen ted in Chapter 7: F uture
+Enhancemen ts . Key areas of fo cus include:
+ Real-time collab oration (m ulti-user).
+ Cloud storage in tegration and cross-device sync.
+ A dv anced handwriting recognition for complex scripts.
+ Mobile application supp ort for iOS and Android.
+ Multilingual supp ort and user feedbac k lo ops.
+77
+--- Page 89 ---
+Bibliography
+[1] Devlin, J., Chang, M.-W., Lee, K., and T outano v a, K. (2018). Bert: Pre-training
+of deep bidirectional transformers for language understanding. arXiv pr eprint
+arXiv:1810.04805 .
+[2] Holstein, K., McLaren, B. M., and Alev en, V. (2019). Co-designing a real-
+time classro om orc hestration to ol to supp ort teac her-ai complemen tarit y . Gr ante e
+Submission .
+[3] Kasneci, E., Seÿler, K., Küc hemann, S., Bannert, M., Demen tiev a, D., Fisc her,
+F., Gasser, U., Groh, G., Günnemann, S., Hüllermeier, E., et al. (2023). Chatgpt
+for go o d? on opp ortunities and c hallenges of large language mo dels for education.
+L e arning and Individual Dier enc es , 103:102274.
+[4] K ota, B. U., Stone, A., Da vila, K., Setlur, S., and Go vindara ju, V. (2021).
+Automated whiteb oard lecture video summarization b y con ten t region detection
+and represen tation. 2020 25th International Confer enc e on Pattern R e c o gnition
+(ICPR) , pages 1070410711.
+[5] Lv, K., Sun, Z., and Xu, M. (2021). Articial in telligen t based video analysis on
+the teac hing in teraction patterns in classro om en vironmen t. International Journal
+of Information and Educ ation T e chnolo gy , 11(3):126130.
+[6] Ott, F., W eh bi, M., Hamann, T., Barth, J., Esk oer, B., and Mutsc hler, C.
+(2020). The onh w dataset: Online handwriting recognition from im u-enhanced
+78
+--- Page 90 ---
+Biblio gr aphy
+ballp oin t p ens with mac hine learning. Pr o c e e dings of the A CM on Inter active,
+Mobile, W e ar able and Ubiquitous T e chnolo gies , 4(3):120.
+[7] See, A., Liu, P . J., and Manning, C. D. (2017). Get to the p oin t: Summarization
+with p oin ter-generator net w orks. Pr o c e e dings of the 55th A nnual Me eting of the
+Asso ciation for Computational Linguistics (A CL) , pages 10731083.
+[8] Shah, H. N. M., Rashid, M. Z. A., Ab dullah, M. F. A., Kamarudin, M. N.,
+Lin, C. K., and Kamis, Z. (2014). Biometric v oice recognition in securit y system.
+Indian Journal of Scienc e and T e chnolo gy , 7(2):104.
+[9] Simard, P . Y., Steinkraus, D., and Platt, J. C. (2003). Best practices for con-
+v olutional neural net w orks applied to visual do cumen t analysis. Pr o c e e dings of
+the Seventh International Confer enc e on Do cument A nalysis and R e c o gnition (IC-
+D AR) , pages 958963.
+[10] Smith, R. (2017). An o v erview of the tesseract o cr engine. Pr o c e e dings of the
+Ninth International Confer enc e on Do cument A nalysis and R e c o gnition (ICD AR) ,
+pages 629633.
+[11] Zhang, Y., Chen, X., W ang, J., and Xing, E. P . (2020). Deep learning for
+video classication and captioning. IEEE T r ansactions on Pattern A nalysis and
+Machine Intel ligenc e , 43(6):20062028.
+79

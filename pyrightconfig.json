@@ -1,0 +1,32 @@
+{
+    "include": ["."],
+    "exclude": ["**/__pycache__"],
+    "pythonVersion": "3.14",
+    "pythonInterpreter": ".venv\\Scripts\\python.exe",
+    "typeCheckingMode": "off",
+    "reportMissingImports": "none",
+    "reportMissingModuleSource": "none",
+    "reportMissingTypeStubs": "none",
+    "reportUnknownVariableType": "none",
+    "reportUnknownMemberType": "none",
+    "reportUnknownArgumentType": "none",
+    "reportAttributeAccessIssue": "none",
+    "reportReturnType": "none",
+    "reportOperatorIssue": "none",
+    "reportIndexIssue": "none",
+    "reportArgumentType": "none",
+    "reportCallIssue": "none",
+    "reportAssignmentType": "none",
+    "reportGeneralTypeIssues": "none",
+    "reportOptionalSubscript": "none",
+    "reportOptionalMemberAccess": "none",
+    "reportOptionalCall": "none",
+    "reportOptionalIterable": "none",
+    "reportOptionalContextManager": "none",
+    "reportOptionalOperand": "none",
+    "useLibraryCodeForTypes": true,
+    "extraPaths": [
+        ".",
+        ".venv\\Lib\\site-packages"
+    ]
+}

@@ -2,6 +2,8 @@ from PIL import Image
 from pytesseract import pytesseract
 from tkinter import Tk
 from tkinter.filedialog import askopenfilename
+import os
+import shutil
 
 
 # Function to extract text from an image using Tesseract
@@ -9,15 +11,45 @@ def extract_text(image_path):
     # Defining path to tesseract.exe
     path_to_tesseract = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-    # Providing the tesseract executable location to pytesseract library
-    pytesseract.tesseract_cmd = path_to_tesseract
+    if os.path.exists(path_to_tesseract):
+        pytesseract.tesseract_cmd = path_to_tesseract
+    elif shutil.which("tesseract"):
+        # Tesseract is in PATH, no need to set cmd
+        pass
+    else:
+
+        print("Warning: Tesseract-OCR not found. Please install it or update the path in textfromimage.py")
+        from tkinter import messagebox
+        try:
+           messagebox.showwarning("Tesseract Not Found", "Tesseract-OCR was not found at standard locations.\nOCR features may not work.\nPlease install it or update path in textfromimage.py")
+        except:
+           pass # In case tk root not ready
+
 
     # Opening the image & storing it in an image object
-    img = Image.open(image_path)
+    try:
+        img = Image.open(image_path)
+    except Exception as e:
+        print(f"Error opening image file '{image_path}': {e}")
+        try:
+            from tkinter import messagebox
+            messagebox.showerror("Image Load Error", f"Cannot open the selected image file. It may be corrupted or an unsupported format.\n\nError details: {e}")
+        except Exception:
+            pass
+        return None
 
     # Passing the image object to image_to_string() function
     # This function will extract the text from the image
-    text = pytesseract.image_to_string(img)
+    try:
+        text = pytesseract.image_to_string(img)
+    except Exception as e:
+        print(f"Error processing image for OCR: {e}")
+        try:
+            from tkinter import messagebox
+            messagebox.showerror("OCR Error", f"An error occurred while extracting text from the image.\n\nError details: {e}")
+        except Exception:
+            pass
+        return None
 
     return text
 

@@ -1,0 +1,40 @@
+# Secrets
+.env
+.env.*
+
+# Virtual environments
+.venv/
+.venv312/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Local runtime data
+my_database.db
+
+# Temp / generated artifacts
+temp_*.txt
+temp_*.json
+noname.gv.xdot
