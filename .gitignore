@@ -26,6 +26,7 @@ build/
 .pytest_cache/
 .coverage
 htmlcov/
+.Data/
 
 # OS
 .DS_Store
@@ -38,3 +39,7 @@ my_database.db
 temp_*.txt
 temp_*.json
 noname.gv.xdot
+
+# Files
+AI Whiteboard Report.pdf
+report_text.txt
