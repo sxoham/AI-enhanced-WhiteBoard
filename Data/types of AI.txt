@@ -1,8 +1,0 @@
-7 Types of Artificial Intelligence
-Narrow AI: AI designed to complete very specific actions; unable to independently learn.
-Artificial General Intelligence: AI designed to learn, think and perform at similar levels to humans.
-Artificial Superintelligence: AI able to surpass the knowledge and capabilities of humans.
-Reactive Machine AI: AI capable of responding to external stimuli in real time; unable to build memory or store information for future.
-Limited Memory AI: AI that can store knowledge and use it to learn and train for future tasks.
-Theory of Mind AI: AI that can sense and respond to human emotions, plus perform the tasks of limited memory machines.
-Self-Aware AI: AI that can recognize others’ emotions, plus has sense of self and human-level intelligence; the final stage of AI.
