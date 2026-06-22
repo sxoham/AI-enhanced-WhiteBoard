@@ -40,6 +40,17 @@ temp_*.txt
 temp_*.json
 noname.gv.xdot
 
+# Generated flowcharts
+ai_generated_flowchart.json
+ai_generated_flowchart.png
+
+# Local saves
+save/
+
+# Test artifacts
+test.pdf
+test_dot_repro.json
+
 # Files
 AI Whiteboard Report.pdf
 report_text.txt
